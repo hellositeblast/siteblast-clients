@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fusion Plumbing is a professional plumber based in Kings Park, offering reliable plumbing services for homes and businesses. Call +61 412 228 319." />
+  <title>Fusion Plumbing | Plumber in Kings Park</title>
+  <style>
+    :root {
+      --primary: #005f99;
+      --primary-dark: #003f66;
+      --secondary: #00a6d6;
+      --accent: #f2b705;
+      --dark: #102331;
+      --text: #334155;
+      --muted: #64748b;
+      --light: #f6f9fc;
+      --white: #ffffff;
+      --border: #dbe5ee;
+      --shadow: 0 18px 45px rgba(16, 35, 49, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -0.4px;
+      font-size: 1.2rem;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-weight: 900;
+      box-shadow: 0 10px 22px rgba(0, 95, 153, 0.25);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-call {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 800;
+      box-shadow: 0 10px 22px rgba(0, 95, 153, 0.22);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .nav-call:hover {
+      background: var(--primary-dark);
+      color: var(--white);
+      transform: translateY(-1px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(0, 166, 214, 0.18), transparent 34%),
+        linear-gradient(135deg, #eef8fc 0%, #ffffff 55%, #f6f9fc 100%);
+      padding: 92px 0 78px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: auto -140px -180px auto;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(0, 95, 153, 0.08);
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgba(0, 95, 153, 0.09);
+      color: var(--primary-dark);
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .eyebrow span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--secondary);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 5vw, 4.6rem);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      color: var(--dark);
+      margin-bottom: 22px;
+    }
+
+    .hero h1 strong {
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 1.13rem;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      border: 2px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 14px 28px rgba(0, 95, 153, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--primary-dark);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 650px;
+    }
+
+    .point {
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      color: var(--dark);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .hero-card {
+      position: relative;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 84px;
+      height: 84px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(0, 95, 153, 0.12), rgba(0, 166, 214, 0.18));
+    }
+
+    .service-badge {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #eaf7fb;
+      color: var(--primary-dark);
+      font-weight: 800;
+      margin-bottom: 26px;
+    }
+
+    .service-badge-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .hero-card h2 {
+      position: relative;
+      color: var(--dark);
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .hero-card p {
+      position: relative;
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .quick-list {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .quick-list li {
+      list-style: none;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    .check {
+      flex: 0 0 22px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(0, 166, 214, 0.15);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 0.82rem;
+      font-weight: 900;
+    }
+
+    .call-box {
+      border-radius: 20px;
+      padding: 20px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--white);
+    }
+
+    .call-box small {
+      display: block;
+      opacity: 0.86;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .call-box a {
+      display: inline-block;
+      font-size: 1.45rem;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+
+    section {
+      padding: 82px 0;
+    }
+
+    .section-head {
+      max-width: 720px;
+      margin: 0 auto 44px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--primary);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+
+    .section-head h2 {
+      color: var(--dark);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      background: var(--white);
+      box-shadow: 0 10px 26px rgba(16, 35, 49, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: rgba(0, 95, 153, 0.28);
+    }
+
+    .icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(0, 95, 153, 0.12), rgba(0, 166, 214, 0.17));
+      color: var(--primary);
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      color: var(--dark);
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .about-visual {
+      min-height: 430px;
+      border-radius: 28px;
+      background:
+        linear-gradient(rgba(0, 63, 102, 0.14), rgba(0, 95, 153, 0.24)),
+        radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.9), transparent 16%),
+        linear-gradient(135deg, #005f99, #00a6d6);
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .about-visual::before,
+    .about-visual::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .about-visual::before {
+      width: 320px;
+      height: 320px;
+      left: -100px;
+      bottom: -120px;
+    }
+
+    .about-visual::after {
+      width: 210px;
+      height: 210px;
+      right: -70px;
+      top: -60px;
+    }
+
+    .about-card {
+      position: absolute;
+      left: 28px;
+      right: 28px;
+      bottom: 28px;
+      padding: 24px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.93);
+      backdrop-filter: blur(8px);
+      color: var(--dark);
+      box-shadow: 0 14px 30px rgba(16, 35, 49, 0.16);
+    }
+
+    .about-card strong {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+      color: var(--primary-dark);
+    }
+
+    .about-content h2 {
+      color: var(--dark);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 18px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 1.03rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 16px;
+      background: var(--white);
+      border: 1px solid var(--border);
+    }
+
+    .feature b {
+      display: block;
+      color: var(--dark);
+      margin-bottom: 2px;
+    }
+
+    .feature span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .contact {
+      background:
+        radial-gradient(circle at top left, rgba(0, 166, 214, 0.16), transparent 30%),
+        linear-gradient(135deg, var(--dark), #123a55);
+      color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .contact h2 {
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 18px;
+    }
+
+    .contact p {
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 1.06rem;
+      max-width: 620px;
+      margin-bottom: 28px;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .contact-item-icon {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      background: rgba(0, 166, 214, 0.22);
+      color: var(--white);
+      font-size: 1.2rem;
+    }
+
+    .contact-item b {
+      display: block;
+      color: var(--white);
+      margin-bottom: 2px;
+    }
+
+    .contact-item a,
+    .contact-item span {
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .contact-panel {
+      background: var(--white);
+      color: var(--dark);
+      border-radius: 26px;
+      padding: 32px;
+      box-shadow: 0 24px 54px rgba(0, 0, 0, 0.22);
+    }
+
+    .contact-panel h3 {
+      font-size: 1.55rem;
+      margin-bottom: 10px;
+      letter-spacing: -0.4px;
+    }
+
+    .contact-panel p {
+      color: var(--muted);
+      margin-bottom: 24px;
+      font-size: 1rem;
+    }
+
+    .quote-list {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .quote-list div {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    .large-call {
+      width: 100%;
+      padding: 18px 22px;
+      border-radius: 18px;
+      background: var(--primary);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 900;
+      box-shadow: 0 14px 30px rgba(0, 95, 153, 0.26);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .large-call:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      background: #081620;
+      color: rgba(255, 255, 255, 0.72);
+      padding: 24px 0;
+      font-size: 0.95rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        flex-wrap: wrap;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        order: 3;
+      }
+
+      .nav-call {
+        padding: 10px 14px;
+      }
+
+      .hero {
+        padding: 70px 0 62px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 640px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-visual {
+        min-height: 360px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .nav {
+        min-height: auto;
+      }
+
+      .logo {
+        font-size: 1.05rem;
+      }
+
+      .logo-mark {
+        width: 40px;
+        height: 40px;
+      }
+
+      .nav-links {
+        gap: 14px;
+        font-size: 0.9rem;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 2px;
+      }
+
+      .nav-call {
+        font-size: 0.9rem;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.2px;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-points {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card,
+      .contact-panel {
+        padding: 24px;
+        border-radius: 22px;
+      }
+
+      .call-box a {
+        font-size: 1.25rem;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .section-head {
+        text-align: left;
+        margin-bottom: 30px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .about-visual {
+        min-height: 330px;
+      }
+
+      .about-card {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="Fusion Plumbing home">
+        <span class="logo-mark">FP</span>
+        <span>Fusion Plumbing</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-call" href="tel:+61412228319">Call +61 412 228 319</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span></span> Local plumber in Kings Park</div>
+          <h1>Reliable plumbing solutions for homes and businesses.</h1>
+          <p>
+            Fusion Plumbing provides professional, prompt and dependable plumbing services across Kings Park and surrounding areas. From urgent repairs to planned installations, we deliver quality workmanship you can trust.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+61412228319">Call Now</a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
+          </div>
+
+          <div class="hero-points">
+            <div class="point">Fast Response</div>
+            <div class="point">Quality Workmanship</div>
+            <div class="point">Local & Dependable</div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Plumbing service highlights">
+          <div class="service-badge">
+            <span class="service-badge-icon">✓</span>
+            Trusted Plumbing Support
+          </div>
+          <h2>Need a plumber in Kings Park?</h2>
+          <p>
+            Speak directly with Fusion Plumbing for practical advice, efficient repairs and professional service.
+          </p>
+
+          <ul class="quick-list">
+            <li><span class="check">✓</span> Leak detection and repairs</li>
+            <li><span class="check">✓</span> Blocked drains and pipework</li>
+            <li><span class="check">✓</span> Hot water plumbing</li>
+            <li><span class="check">✓</span> Residential and commercial jobs</li>
+          </ul>
+
+          <div class="call-box">
+            <small>Call Fusion Plumbing</small>
+            <a href="tel:+61412228319">+61 412 228 319</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-label">Our Services</div>
+          <h2>Complete plumbing services tailored to your needs</h2>
+          <p>
+            Whether it is a small repair, an unexpected issue or a larger plumbing project, Fusion Plumbing is ready to help with reliable service and clear communication.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="icon">🔧</div>
+            <h3>General Plumbing</h3>
+            <p>
+              Everyday plumbing maintenance, repairs, replacements and installations completed with care and attention to detail.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">💧</div>
+            <h3>Leak Repairs</h3>
+            <p>
+              Prompt support for leaking taps, toilets, pipes and fixtures to help prevent water damage and unnecessary waste.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🚿</div>
+            <h3>Blocked Drains</h3>
+            <p>
+              Practical solutions for blocked sinks, showers, toilets and drainage issues to get your plumbing flowing again.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🔥</div>
+            <h3>Hot Water Systems</h3>
+            <p>
+              Assistance with hot water plumbing, repairs, replacements and system connections for reliable daily comfort.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🏠</div>
+            <h3>Residential Plumbing</h3>
+            <p>
+              Friendly and dependable plumbing for homeowners, tenants, landlords and property managers in Kings Park.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🏢</div>
+            <h3>Commercial Plumbing</h3>
+            <p>
+              Professional plumbing services for local businesses, offices and commercial properties requiring efficient support.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-visual" aria-label="Fusion Plumbing professional service graphic">
+          <div class="about-card">
+            <strong>Fusion Plumbing</strong>
+            Local plumbing expertise based in Kings Park.
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-label">About Us</div>
+          <h2>Your local Kings Park plumbing team</h2>
+          <p>
+            Fusion Plumbing is built on dependable service, honest communication and quality workmanship. We understand that plumbing issues can disrupt your day, so we focus on providing clear advice and efficient solutions.
+          </p>
+          <p>
+            Based in Kings Park, we work with residential and commercial customers who need a plumber they can count on. From minor repairs to larger plumbing requirements, our goal is to make the process simple, professional and stress-free.
+          </p>
+
+          <div class="features">
+            <div class="feature">
+              <span class="check">✓</span>
+              <div>
+                <b>Professional Service</b>
+                <span>Respectful, tidy and reliable workmanship.</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span class="check">✓</span>
+              <div>
+                <b>Local Knowledge</b>
+                <span>Based in Kings Park and ready to assist.</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span class="check">✓</span>
+              <div>
+                <b>Clear Communication</b>
+                <span>Straightforward advice from start to finish.</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span class="check">✓</span>
+              <div>
+                <b>Practical Solutions</b>
+                <span>Plumbing work focused on lasting results.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-label" style="color: #7ddcff;">Contact</div>
+          <h2>Get in touch with Fusion Plumbing today</h2>
+          <p>
+            Need plumbing help in Kings Park? Call Fusion Plumbing to discuss your issue, arrange service or request professional plumbing support.
+          </p>
+
+          <a class="btn btn-primary" href="tel:+61412228319">Call +61 412 228 319</a>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon">☎</div>
+              <div>
+                <b>Phone</b>
+                <a href="tel:+61412228319">+61 412 228 319</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <b>Location</b>
+                <span>Kings Park</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">🛠</div>
+              <div>
+                <b>Services</b>
+                <span>Residential and commercial plumbing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="contact-panel">
+          <h3>Ready to book a plumber?</h3>
+          <p>
+            For prompt plumbing assistance, call Fusion Plumbing directly and speak with a local professional.
+          </p>
+
+          <div class="quote-list">
+            <div><span class="check">✓</span> Plumbing repairs</div>
+            <div><span class="check">✓</span> Drain and leak issues</div>
+            <div><span class="check">✓</span> Installations and maintenance</div>
+            <div><span class="check">✓</span> Local service in Kings Park</div>
+          </div>
+
+          <a class="large-call" href="tel:+61412228319">+61 412 228 319</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>Fusion Plumbing</strong> &copy; 2026. All rights reserved.</div>
+      <div>Kings Park | <a href="tel:+61412228319">+61 412 228 319</a></div>
+    </div>
+  </footer>
+</body>
+</html>
