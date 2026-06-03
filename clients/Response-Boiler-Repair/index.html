@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Quayside Plumbing provides reliable plumbing services across Liverpool. Call +44 7795 067193 for repairs, installations, emergencies and general plumbing." />
+  <title>Quayside Plumbing | Professional Plumber in Liverpool</title>
+  <style>
+    :root {
+      --primary: #0a4f8f;
+      --primary-dark: #073763;
+      --secondary: #18a6c8;
+      --accent: #f6b83f;
+      --text: #1f2937;
+      --muted: #64748b;
+      --light: #f5f9fc;
+      --white: #ffffff;
+      --border: #dbe7ef;
+      --shadow: 0 18px 45px rgba(7, 55, 99, 0.14);
+      --radius: 18px;
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img,
+    svg {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .top-bar {
+      background: var(--primary-dark);
+      color: var(--white);
+      font-size: 0.95rem;
+      padding: 10px 0;
+    }
+
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar a {
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.03em;
+      font-size: 1.35rem;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 10px 25px rgba(10, 79, 143, 0.25);
+    }
+
+    .logo-mark svg {
+      width: 25px;
+      height: 25px;
+      fill: currentColor;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    nav a {
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.96rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      background: var(--accent);
+      color: #1b2838;
+      border-radius: 999px;
+      font-weight: 800;
+      box-shadow: 0 10px 25px rgba(246, 184, 63, 0.3);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(24, 166, 200, 0.25), transparent 36%),
+        linear-gradient(135deg, #eef8fd 0%, #ffffff 52%, #edf7fb 100%);
+      padding: 88px 0 92px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background: rgba(10, 79, 143, 0.08);
+      bottom: -250px;
+      left: -180px;
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(10, 79, 143, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(10, 79, 143, 0.12);
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      color: var(--primary-dark);
+      font-size: clamp(2.35rem, 5vw, 4.8rem);
+      line-height: 1.03;
+      letter-spacing: -0.06em;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.16rem;
+      max-width: 640px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 999px;
+      padding: 15px 23px;
+      font-weight: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 14px 30px rgba(10, 79, 143, 0.28);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--primary-dark);
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 25px rgba(7, 55, 99, 0.08);
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 650px;
+    }
+
+    .trust-card {
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 10px 24px rgba(7, 55, 99, 0.06);
+    }
+
+    .trust-card strong {
+      display: block;
+      color: var(--primary-dark);
+      font-size: 1rem;
+      margin-bottom: 3px;
+    }
+
+    .trust-card span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .hero-card {
+      position: relative;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(24, 166, 200, 0.11), transparent 42%),
+        radial-gradient(circle at bottom right, rgba(246, 184, 63, 0.18), transparent 34%);
+      pointer-events: none;
+    }
+
+    .hero-card-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .illustration {
+      height: 240px;
+      border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(7, 55, 99, 0.92), rgba(10, 79, 143, 0.82)),
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.08) 0 10px, transparent 10px 20px);
+      display: grid;
+      place-items: center;
+      margin-bottom: 22px;
+      color: var(--white);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .illustration::before,
+    .illustration::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    .illustration::before {
+      width: 210px;
+      height: 210px;
+      top: -95px;
+      right: -65px;
+    }
+
+    .illustration::after {
+      width: 150px;
+      height: 150px;
+      bottom: -70px;
+      left: -45px;
+    }
+
+    .illustration svg {
+      width: 118px;
+      height: 118px;
+      z-index: 1;
+    }
+
+    .quick-contact {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .quick-contact h3 {
+      color: var(--primary-dark);
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+
+    .quick-contact p {
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .phone-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+    }
+
+    .phone-box span {
+      color: var(--muted);
+      font-size: 0.88rem;
+      display: block;
+    }
+
+    .phone-box strong {
+      color: var(--primary-dark);
+      font-size: 1.08rem;
+    }
+
+    section {
+      padding: 86px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 46px;
+    }
+
+    .section-header h2 {
+      color: var(--primary-dark);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+      margin-bottom: 14px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 12px 28px rgba(7, 55, 99, 0.07);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: rgba(10, 79, 143, 0.22);
+    }
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(10, 79, 143, 0.12), rgba(24, 166, 200, 0.12));
+      color: var(--primary);
+      margin-bottom: 18px;
+      font-size: 1.6rem;
+    }
+
+    .service-card h3 {
+      color: var(--primary-dark);
+      font-size: 1.24rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .about {
+      background:
+        linear-gradient(180deg, #f6fbfe 0%, #ffffff 100%);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .about-panel {
+      border-radius: 28px;
+      padding: 34px;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: var(--white);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      min-height: 430px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .about-panel::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      top: -90px;
+      right: -90px;
+    }
+
+    .about-panel::after {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: rgba(246, 184, 63, 0.2);
+      bottom: -55px;
+      left: -35px;
+    }
+
+    .about-panel-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-panel h3 {
+      font-size: 2rem;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+    }
+
+    .about-panel p {
+      color: rgba(255,255,255,0.86);
+      margin-bottom: 22px;
+    }
+
+    .stats {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .stat {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.55rem;
+      margin-bottom: 2px;
+    }
+
+    .stat span {
+      color: rgba(255,255,255,0.82);
+      font-size: 0.92rem;
+    }
+
+    .about-content h2 {
+      color: var(--primary-dark);
+      font-size: clamp(2rem, 3.2vw, 3rem);
+      line-height: 1.13;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 1.03rem;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 13px;
+      margin-top: 24px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      flex: 0 0 25px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(24, 166, 200, 0.14);
+      color: var(--primary);
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .contact {
+      background:
+        radial-gradient(circle at top left, rgba(24, 166, 200, 0.15), transparent 35%),
+        linear-gradient(135deg, var(--primary-dark), #062947);
+      color: var(--white);
+      padding-bottom: 72px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .contact h2 {
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+      margin-bottom: 18px;
+    }
+
+    .contact p {
+      color: rgba(255,255,255,0.82);
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+    }
+
+    .contact-info {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 24px;
+      padding: 30px;
+      backdrop-filter: blur(8px);
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.13);
+    }
+
+    .contact-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .contact-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      font-size: 1.25rem;
+    }
+
+    .contact-item span {
+      display: block;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.92rem;
+      margin-bottom: 3px;
+    }
+
+    .contact-item strong,
+    .contact-item a {
+      color: var(--white);
+      font-size: 1.12rem;
+      font-weight: 800;
+    }
+
+    .contact-card {
+      background: var(--white);
+      color: var(--text);
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: 0 22px 55px rgba(0,0,0,0.18);
+    }
+
+    .contact-card h3 {
+      color: var(--primary-dark);
+      font-size: 1.7rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      margin-bottom: 22px;
+      font-size: 1rem;
+    }
+
+    .contact-card .btn {
+      width: 100%;
+      border-radius: 16px;
+      font-size: 1.08rem;
+      padding: 17px 22px;
+    }
+
+    .service-area {
+      margin-top: 22px;
+      padding: 18px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      color: var(--muted);
+    }
+
+    .service-area strong {
+      display: block;
+      color: var(--primary-dark);
+      margin-bottom: 5px;
+    }
+
+    footer {
+      background: #041d33;
+      color: rgba(255,255,255,0.78);
+      padding: 24px 0;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 980px) {
+      nav ul {
+        gap: 18px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 68px 0 74px;
+      }
+
+      .hero-card {
+        max-width: 620px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-panel {
+        min-height: 360px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .top-bar .container {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 16px 0;
+        gap: 16px;
+      }
+
+      .logo {
+        justify-content: center;
+      }
+
+      nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px 20px;
+      }
+
+      .nav-cta {
+        padding: 10px 15px;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 54px 0 64px;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .trust-row {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-content {
+        text-align: left;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: min(90%, var(--max-width));
+      }
+
+      nav ul {
+        font-size: 0.92rem;
+      }
+
+      .hero h1 {
+        font-size: 2.35rem;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .phone-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-card,
+      .about-panel,
+      .contact-info,
+      .contact-card {
+        padding: 22px;
+        border-radius: 22px;
+      }
+
+      .illustration {
+        height: 190px;
+      }
+
+      .service-card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <span>Professional plumbing services across Liverpool</span>
+      <a href="tel:+447795067193">Call: +44 7795 067193</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <a href="#home" class="logo" aria-label="Quayside Plumbing home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M19.4 13.5c.4.9.6 1.8.6 2.8 0 3.7-3 6.7-6.7 6.7s-6.7-3-6.7-6.7c0-2.1 1-4 2.6-5.2L12 8.9l2.8 2.2c.5.4 1 .9 1.4 1.4l2.3-2.3-1.8-1.8 1.4-1.4 4.2 4.2-1.4 1.4-1.5-1.5-2 2.4ZM12 2l4.6 4.6-1.4 1.4L12 4.8 8.8 8 7.4 6.6 12 2Zm1.3 18.9c2.6 0 4.7-2.1 4.7-4.7 0-1.4-.7-2.8-1.8-3.7L12 9.3l-4.2 3.3C6.7 13.5 6 14.8 6 16.3c0 2.6 2.1 4.6 4.7 4.6h2.6Z"/>
+            </svg>
+          </span>
+          <span>Quayside Plumbing</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="nav-cta" href="tel:+447795067193">Call Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">Liverpool Plumber • Reliable Local Service</div>
+            <h1>Trusted plumbing help when you need it.</h1>
+            <p>
+              Quayside Plumbing provides dependable, professional plumbing services for homes and businesses across Liverpool. From leaks and repairs to installations and maintenance, we deliver tidy workmanship and straightforward service.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+447795067193">Call +44 7795 067193</a>
+              <a class="btn btn-secondary" href="#services">View Services</a>
+            </div>
+
+            <div class="trust-row">
+              <div class="trust-card">
+                <strong>Local Expertise</strong>
+                <span>Serving Liverpool and nearby areas</span>
+              </div>
+              <div class="trust-card">
+                <strong>Clear Advice</strong>
+                <span>Honest guidance before work begins</span>
+              </div>
+              <div class="trust-card">
+                <strong>Tidy Work</strong>
+                <span>Respectful service in your property</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Contact Quayside Plumbing">
+            <div class="hero-card-inner">
+              <div class="illustration" aria-hidden="true">
+                <svg viewBox="0 0 120 120" fill="none">
+                  <path d="M78 22C78 15.4 83.4 10 90 10C96.6 10 102 15.4 102 22C102 28.6 96.6 34 90 34H82V48H96C101.5 48 106 52.5 106 58V70H94V60H58V82H70V94H50C44.5 94 40 89.5 40 84V72H26V82H14V58C14 52.5 18.5 48 24 48H70V22H78Z" fill="white" opacity="0.95"/>
+                  <path d="M18 96C18 86 30 75 30 75C30 75 42 86 42 96C42 102.6 36.6 108 30 108C23.4 108 18 102.6 18 96Z" fill="#F6B83F"/>
+                  <path d="M72 82H96C101.5 82 106 86.5 106 92C106 97.5 101.5 102 96 102H72V82Z" fill="#18A6C8"/>
+                </svg>
+              </div>
+
+              <div class="quick-contact">
+                <h3>Need a plumber in Liverpool?</h3>
+                <p>Speak directly with Quayside Plumbing to discuss your plumbing issue and arrange a visit.</p>
+                <div class="phone-box">
+                  <div>
+                    <span>Phone</span>
+                    <strong>+44 7795 067193</strong>
+                  </div>
+                  <a class="btn btn-primary" href="tel:+447795067193">Call</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Plumbing services for homes and businesses</h2>
+          <p>
+            Practical, reliable plumbing solutions delivered with care, attention to detail and a focus on long-lasting results.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🔧</div>
+            <h3>General Plumbing Repairs</h3>
+            <p>Repairs for common plumbing faults including dripping taps, faulty valves, pipework issues, toilet problems and everyday plumbing maintenance.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">💧</div>
+            <h3>Leaks & Water Issues</h3>
+            <p>Prompt help with leaks, water damage prevention, pipe faults and identifying the source of plumbing problems before they worsen.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🚿</div>
+            <h3>Bathroom Plumbing</h3>
+            <p>Installation and repair work for showers, baths, basins, toilets, taps and bathroom pipework with a clean, professional finish.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🏠</div>
+            <h3>Kitchen Plumbing</h3>
+            <p>Support with sinks, taps, waste pipes, appliances, water feeds and kitchen plumbing upgrades or replacements.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">⚙️</div>
+            <h3>Installations & Replacements</h3>
+            <p>Professional fitting of fixtures, fittings and pipework replacements to improve performance, reliability and efficiency.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">📞</div>
+            <h3>Urgent Plumbing Support</h3>
+            <p>When plumbing problems need fast attention, call Quayside Plumbing to discuss the issue and arrange assistance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-panel">
+            <div class="about-panel-content">
+              <h3>Local, dependable and focused on quality.</h3>
+              <p>
+                Quayside Plumbing is based in Liverpool and provides professional plumbing support with a friendly, practical approach.
+              </p>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <strong>Liverpool</strong>
+                <span>Local service area</span>
+              </div>
+              <div class="stat">
+                <strong>Reliable</strong>
+                <span>Clear communication</span>
+              </div>
+              <div class="stat">
+                <strong>Clean</strong>
+                <span>Respectful workmanship</span>
+              </div>
+              <div class="stat">
+                <strong>Helpful</strong>
+                <span>Advice you can trust</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h2>Why choose Quayside Plumbing?</h2>
+            <p>
+              Plumbing problems can disrupt your home or business quickly. Quayside Plumbing aims to make the process simple with clear advice, careful workmanship and dependable service from the first call through to completion.
+            </p>
+            <p>
+              Whether you need a small repair, help with a leak, fixture installation or ongoing plumbing maintenance, you can expect a professional approach and a tidy finish.
+            </p>
+
+            <ul class="check-list">
+              <li>Based in Liverpool and serving the surrounding area</li>
+              <li>Friendly, straightforward communication</li>
+              <li>Repairs, maintenance and installation work undertaken</li>
+              <li>Careful attention to your property and plumbing system</li>
+              <li>Easy phone contact for bookings and enquiries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Contact Quayside Plumbing</h2>
+            <p>
+              For plumbing repairs, installations or advice in Liverpool, get in touch today. Call to discuss your requirements and arrange a convenient appointment.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">📞</div>
+              <div>
+                <span>Call Quayside Plumbing</span>
+                <a href="tel:+447795067193">+44 7795 067193</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+              <div>
+                <span>Location</span>
+                <strong>Liverpool, United Kingdom</strong>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">🛠️</div>
+              <div>
+                <span>Services</span>
+                <strong>Repairs, leaks, bathrooms, kitchens and installations</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3>Ready to book a plumber?</h3>
+            <p>
+              The quickest way to reach Quayside Plumbing is by phone. Call now and provide a brief description of the issue, your location and preferred timing.
+            </p>
+            <a class="btn btn-primary" href="tel:+447795067193">Call +44 7795 067193</a>
+
+            <div class="service-area">
+              <strong>Service area</strong>
+              Liverpool and nearby communities. Contact us to confirm availability for your address.
+            </div>
+
+            <div class="service-area">
+              <strong>What to mention when calling</strong>
+              The type of issue, any visible leaks, fixture details and whether the work is urgent.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Quayside Plumbing</strong> &copy; 2026. Professional plumbing services in Liverpool. Call <a href="tel:+447795067193">+44 7795 067193</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
