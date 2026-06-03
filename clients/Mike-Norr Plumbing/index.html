@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mike Norr Plumbing | Tremonton Plumber</title>
+  <meta name="description" content="Mike Norr Plumbing provides dependable plumbing services in Tremonton. Call +1 435-230-1275 for professional plumbing repairs, installations, and maintenance." />
+  <style>
+    :root {
+      --primary: #0b5f8a;
+      --primary-dark: #073f5c;
+      --secondary: #f3a51d;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --light: #f5f9fc;
+      --white: #ffffff;
+      --border: #dbe6ee;
+      --shadow: 0 18px 45px rgba(7, 63, 92, 0.14);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img, svg {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 76px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.03em;
+      font-size: 1.2rem;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), #1595c7);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      box-shadow: 0 10px 25px rgba(11, 95, 138, 0.25);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-call {
+      background: var(--secondary);
+      color: #2d2106;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      box-shadow: 0 10px 22px rgba(243, 165, 29, 0.28);
+      white-space: nowrap;
+    }
+
+    .nav-call:hover {
+      transform: translateY(-1px);
+      background: #f8b43f;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(243, 165, 29, 0.16), transparent 28%),
+        radial-gradient(circle at 85% 12%, rgba(21, 149, 199, 0.18), transparent 30%),
+        linear-gradient(135deg, #eef8fd 0%, #ffffff 58%, #f8fbfd 100%);
+      padding: 86px 0 76px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -120px;
+      bottom: -160px;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(11, 95, 138, 0.08);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border: 1px solid rgba(11, 95, 138, 0.18);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 0.92rem;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow span {
+      width: 9px;
+      height: 9px;
+      background: var(--secondary);
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px rgba(243, 165, 29, 0.18);
+    }
+
+    h1 {
+      font-size: clamp(2.45rem, 5vw, 4.85rem);
+      line-height: 1.02;
+      letter-spacing: -0.06em;
+      color: #0b2436;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: all 0.2s ease;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 16px 32px rgba(11, 95, 138, 0.28);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: var(--white);
+      color: var(--primary-dark);
+      border-color: var(--border);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .hero-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 8px;
+      background: linear-gradient(90deg, var(--primary), #18a5d5, var(--secondary));
+    }
+
+    .pipe-illustration {
+      width: 100%;
+      aspect-ratio: 1.05 / 1;
+      border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(11, 95, 138, 0.08), rgba(243, 165, 29, 0.09)),
+        #f7fbfe;
+      display: grid;
+      place-items: center;
+      margin-bottom: 24px;
+    }
+
+    .quick-info {
+      display: grid;
+      gap: 14px;
+    }
+
+    .info-row {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px;
+      border-radius: 16px;
+      background: var(--light);
+      border: 1px solid var(--border);
+    }
+
+    .info-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+    }
+
+    .info-row strong {
+      display: block;
+      color: var(--primary-dark);
+      margin-bottom: 2px;
+    }
+
+    .info-row span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section {
+      padding: 86px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 44px;
+    }
+
+    .section-kicker {
+      color: var(--primary);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.82rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 3.6vw, 3.25rem);
+      line-height: 1.12;
+      letter-spacing: -0.045em;
+      color: #0b2436;
+      margin-bottom: 16px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 12px 28px rgba(7, 63, 92, 0.07);
+      transition: all 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: rgba(11, 95, 138, 0.28);
+    }
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: rgba(11, 95, 138, 0.1);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 1.2rem;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .service-card p {
+      color: var(--muted);
+    }
+
+    .about {
+      background:
+        linear-gradient(180deg, #f5f9fc 0%, #ffffff 100%);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .about-panel {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      border-radius: 28px;
+      padding: 34px;
+      color: var(--white);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      min-height: 410px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .about-panel::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      right: -80px;
+      top: -70px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .about-panel h3 {
+      font-size: 2rem;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-panel p {
+      color: rgba(255, 255, 255, 0.86);
+      margin-top: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stat {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.65rem;
+      line-height: 1;
+      color: var(--secondary);
+      margin-bottom: 6px;
+    }
+
+    .stat span {
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 0.94rem;
+    }
+
+    .about-content h2 {
+      text-align: left;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 13px;
+      margin-top: 26px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(243, 165, 29, 0.18);
+      color: #a26700;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      margin-top: 1px;
+    }
+
+    .contact {
+      background: #0b2436;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background: rgba(21, 149, 199, 0.18);
+      left: -220px;
+      top: -250px;
+    }
+
+    .contact::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: rgba(243, 165, 29, 0.13);
+      right: -150px;
+      bottom: -160px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.85fr;
+      gap: 42px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact h2 {
+      color: var(--white);
+      text-align: left;
+    }
+
+    .contact p {
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 1.08rem;
+      margin-bottom: 26px;
+      max-width: 630px;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 24px;
+      padding: 30px;
+      backdrop-filter: blur(8px);
+    }
+
+    .contact-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+      letter-spacing: -0.02em;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .contact-detail:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .contact-detail-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      background: var(--secondary);
+      color: #271a00;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+    }
+
+    .contact-detail strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .contact-detail span,
+    .contact-detail a {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .large-phone {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: var(--secondary);
+      color: #271a00;
+      border-radius: 999px;
+      padding: 16px 24px;
+      font-weight: 900;
+      font-size: 1.08rem;
+      box-shadow: 0 16px 35px rgba(243, 165, 29, 0.24);
+    }
+
+    .large-phone:hover {
+      background: #f8b43f;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      background: #071926;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 24px 0;
+      text-align: center;
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 920px) {
+      .nav {
+        min-height: auto;
+        padding: 16px 0;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 58px 0 64px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 620px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .brand {
+        font-size: 1.04rem;
+      }
+
+      .brand-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .nav-call {
+        padding: 10px 12px;
+        font-size: 0.88rem;
+      }
+
+      .hero {
+        padding: 44px 0 54px;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card,
+      .hero-card,
+      .about-panel,
+      .contact-card {
+        padding: 22px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .about-panel {
+        min-height: 360px;
+      }
+
+      .large-phone {
+        width: 100%;
+      }
+
+      .contact-detail {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="Mike Norr Plumbing home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none">
+            <path d="M7 14c-2.4 0-4-1.6-4-4V5h4v5h10V5h4v5c0 2.4-1.6 4-4 4h-3v5a3 3 0 0 1-6 0v-5H7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M10 19h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Mike Norr Plumbing</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-call" href="tel:+14352301275">Call +1 435-230-1275</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span></span> Trusted Plumber in Tremonton</div>
+          <h1>Dependable plumbing service when you need it most.</h1>
+          <p>
+            Mike Norr Plumbing provides professional plumbing repairs, maintenance, and installations for homes and businesses throughout Tremonton and nearby areas.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+14352301275">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.81a2 2 0 0 1-.45 2.11L8.05 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.31 1.85.53 2.81.66A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Call Now
+            </a>
+            <a class="btn btn-outline" href="#services">View Services</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Plumbing service highlights">
+          <div class="pipe-illustration" aria-hidden="true">
+            <svg width="240" height="240" viewBox="0 0 240 240" fill="none">
+              <circle cx="120" cy="120" r="94" fill="#EAF6FB"/>
+              <path d="M65 83h65c18 0 32 14 32 32v11" stroke="#0B5F8A" stroke-width="18" stroke-linecap="round"/>
+              <path d="M162 126v34" stroke="#0B5F8A" stroke-width="18" stroke-linecap="round"/>
+              <path d="M49 83h33" stroke="#F3A51D" stroke-width="22" stroke-linecap="round"/>
+              <path d="M146 160h32" stroke="#F3A51D" stroke-width="22" stroke-linecap="round"/>
+              <path d="M78 66v34M101 66v34" stroke="#073F5C" stroke-width="8" stroke-linecap="round"/>
+              <path d="M145 144h34M145 176h34" stroke="#073F5C" stroke-width="8" stroke-linecap="round"/>
+              <path d="M92 132c-14 13-22 25-22 36a22 22 0 0 0 44 0c0-11-8-23-22-36Z" fill="#1595C7"/>
+              <path d="M83 169a9 9 0 0 0 9 9" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <div class="quick-info">
+            <div class="info-row">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s7-4.6 7-11a7 7 0 0 0-14 0c0 6.4 7 11 7 11Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Local Service</strong>
+                <span>Serving Tremonton and surrounding communities.</span>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+                  <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-3-3 2.4-2.4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Professional Repairs</strong>
+                <span>Clear communication and quality workmanship.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Our Services</div>
+          <h2>Plumbing solutions for your home or business.</h2>
+          <p>From everyday leaks to fixture upgrades, Mike Norr Plumbing is ready to help keep your water systems working properly.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2s6 6.3 6 11a6 6 0 0 1-12 0c0-4.7 6-11 6-11Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M9 14a3 3 0 0 0 3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Leak Detection & Repair</h3>
+            <p>Prompt repair for dripping faucets, pipe leaks, running toilets, and water line issues before they become bigger problems.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M4 12h16M8 8h8M8 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M6 4h12v16H6V4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Fixture Installation</h3>
+            <p>Installation and replacement of faucets, sinks, toilets, shower fixtures, garbage disposals, and other plumbing components.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M7 3h10v6H7V3ZM5 9h14v12H5V9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M9 13h6M9 17h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Water Heater Service</h3>
+            <p>Support for water heater troubleshooting, repairs, maintenance, and replacement recommendations.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M4 7h8a4 4 0 0 1 4 4v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 17h4M20 13v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 4v6M8 4v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Drain & Pipe Work</h3>
+            <p>Help with slow drains, clogged lines, pipe repairs, and routine plumbing maintenance to improve flow and reliability.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M12 21a8 8 0 0 0 8-8c0-5-8-11-8-11S4 8 4 13a8 8 0 0 0 8 8Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M15 13a3 3 0 0 1-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Kitchen & Bath Plumbing</h3>
+            <p>Plumbing service for remodels, upgrades, repairs, and improvements in your kitchen, bathroom, or laundry area.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 12a9 9 0 1 1-3-6.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M21 3v6h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Maintenance Calls</h3>
+            <p>Preventive inspections and maintenance to catch small issues early and keep your plumbing system running smoothly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-panel">
+          <div>
+            <h3>Local plumbing help with dependable service.</h3>
+            <p>When plumbing issues interrupt your day, you need someone who responds clearly, works carefully, and treats your property with respect.</p>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>Tremonton</strong>
+              <span>Local service area</span>
+            </div>
+            <div class="stat">
+              <strong>Quality</strong>
+              <span>Workmanship focused</span>
+            </div>
+            <div class="stat">
+              <strong>Repair</strong>
+              <span>Residential plumbing</span>
+            </div>
+            <div class="stat">
+              <strong>Install</strong>
+              <span>Fixture upgrades</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-kicker">About Mike Norr Plumbing</div>
+          <h2>A practical, professional approach to plumbing.</h2>
+          <p>
+            Mike Norr Plumbing serves customers in Tremonton with reliable plumbing service for common household and light commercial needs. Whether you are dealing with a leak, replacing a fixture, or planning plumbing improvements, you can count on straightforward support.
+          </p>
+          <p>
+            The goal is simple: identify the issue, explain the options, and complete the work with care so your plumbing performs the way it should.
+          </p>
+
+          <div class="check-list">
+            <div class="check-item">
+              <span class="check" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                  <path d="m20 6-11 11-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>Friendly, local service in Tremonton</span>
+            </div>
+            <div class="check-item">
+              <span class="check" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                  <path d="m20 6-11 11-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>Repairs, installations, and routine maintenance</span>
+            </div>
+            <div class="check-item">
+              <span class="check" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                  <path d="m20 6-11 11-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>Clear communication from start to finish</span>
+            </div>
+            <div class="check-item">
+              <span class="check" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                  <path d="m20 6-11 11-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>Respectful service for your home or property</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-kicker" style="color: var(--secondary);">Contact</div>
+          <h2>Need a plumber in Tremonton?</h2>
+          <p>
+            Call Mike Norr Plumbing to discuss your plumbing issue, request service, or ask about repair and installation options.
+          </p>
+          <a class="large-phone" href="tel:+14352301275">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.81a2 2 0 0 1-.45 2.11L8.05 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.31 1.85.53 2.81.66A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            +1 435-230-1275
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.81a2 2 0 0 1-.45 2.11L8.05 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.31 1.85.53 2.81.66A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+14352301275">+1 435-230-1275</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-4.6 7-11a7 7 0 0 0-14 0c0 6.4 7 11 7 11Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Service Area</strong>
+              <span>Tremonton, Utah and nearby communities</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+                <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-3-3 2.4-2.4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Services</strong>
+              <span>Repairs, installations, drain work, and maintenance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Mike Norr Plumbing. Serving Tremonton with dependable plumbing service.
+    </div>
+  </footer>
+</body>
+</html>
