@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gilbert Plumbing & Mechanical | Plumber in Tremonton, UT</title>
+  <meta name="description" content="Gilbert Plumbing & Mechanical provides dependable plumbing and mechanical services in Tremonton and surrounding areas. Call +1 435-760-7985 today." />
+  <style>
+    :root {
+      --primary: #0b5f8a;
+      --primary-dark: #074866;
+      --secondary: #f2a900;
+      --dark: #17212b;
+      --gray: #5f6b76;
+      --light: #f5f8fb;
+      --white: #ffffff;
+      --border: #dce6ee;
+      --shadow: 0 14px 35px rgba(10, 35, 55, 0.14);
+      --radius: 18px;
+      --max-width: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(100% - 40px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .top-bar {
+      background: var(--primary-dark);
+      color: var(--white);
+      font-size: 0.95rem;
+    }
+
+    .top-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    .top-bar a {
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.03em;
+      font-size: 1.35rem;
+      line-height: 1.1;
+    }
+
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), #19a3d2);
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-size: 1.35rem;
+      font-weight: 900;
+      box-shadow: 0 8px 22px rgba(11, 95, 138, 0.28);
+      flex-shrink: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 0.98rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      background: var(--secondary);
+      color: var(--dark);
+      padding: 11px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      box-shadow: 0 8px 20px rgba(242, 169, 0, 0.28);
+    }
+
+    .nav-cta:hover {
+      color: var(--dark);
+      background: #ffc338;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(25, 163, 210, 0.25), transparent 34%),
+        linear-gradient(135deg, #ecf8ff 0%, #ffffff 48%, #f7fbfd 100%);
+      padding: 90px 0;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      right: -120px;
+      bottom: -160px;
+      width: 440px;
+      height: 440px;
+      background: rgba(11, 95, 138, 0.08);
+      border-radius: 50%;
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary-dark);
+      background: rgba(11, 95, 138, 0.1);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--secondary);
+    }
+
+    h1 {
+      font-size: clamp(2.45rem, 5vw, 4.65rem);
+      line-height: 1.02;
+      letter-spacing: -0.06em;
+      color: var(--dark);
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      color: var(--gray);
+      font-size: 1.18rem;
+      max-width: 650px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 999px;
+      padding: 15px 24px;
+      font-weight: 900;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--secondary);
+      color: var(--dark);
+      box-shadow: 0 12px 25px rgba(242, 169, 0, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: #ffc338;
+    }
+
+    .btn-secondary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 12px 25px rgba(11, 95, 138, 0.22);
+    }
+
+    .btn-secondary:hover {
+      background: var(--primary-dark);
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 680px;
+    }
+
+    .trust-item {
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      box-shadow: 0 8px 22px rgba(10, 35, 55, 0.06);
+    }
+
+    .hero-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 180px;
+      height: 180px;
+      background: rgba(242, 169, 0, 0.18);
+      border-radius: 50%;
+    }
+
+    .hero-card-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--primary), #18a9d8);
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-size: 2rem;
+      margin-bottom: 22px;
+      box-shadow: 0 12px 26px rgba(11, 95, 138, 0.25);
+    }
+
+    .hero-card h2 {
+      font-size: 1.8rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+      color: var(--primary-dark);
+    }
+
+    .hero-card p {
+      font-size: 1rem;
+      margin-bottom: 22px;
+    }
+
+    .quick-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .quick-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--gray);
+      font-weight: 700;
+    }
+
+    .check {
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      background: rgba(11, 95, 138, 0.1);
+      color: var(--primary);
+      display: inline-grid;
+      place-items: center;
+      flex-shrink: 0;
+      font-weight: 900;
+      font-size: 0.82rem;
+    }
+
+    section {
+      padding: 88px 0;
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin: 0 auto 44px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--primary);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.83rem;
+      margin-bottom: 10px;
+    }
+
+    h2.section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.055em;
+      margin-bottom: 16px;
+    }
+
+    .section-header p {
+      color: var(--gray);
+      font-size: 1.08rem;
+    }
+
+    .services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      background: var(--white);
+      box-shadow: 0 10px 28px rgba(10, 35, 55, 0.07);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(11, 95, 138, 0.35);
+      box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      background: rgba(11, 95, 138, 0.1);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 1.55rem;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      letter-spacing: -0.03em;
+    }
+
+    .service-card p {
+      color: var(--gray);
+    }
+
+    .about {
+      background: var(--light);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .about-visual {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      min-height: 430px;
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      padding: 34px;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .about-visual::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      top: -90px;
+      right: -75px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .about-visual::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      bottom: 90px;
+      left: -70px;
+      background: rgba(242, 169, 0, 0.22);
+    }
+
+    .about-badge {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.13);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 22px;
+      padding: 24px;
+      backdrop-filter: blur(6px);
+    }
+
+    .about-badge .big {
+      font-size: 3rem;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+
+    .about-badge p {
+      color: rgba(255, 255, 255, 0.88);
+      font-weight: 700;
+    }
+
+    .about-content .section-label,
+    .about-content h2,
+    .about-content p {
+      text-align: left;
+    }
+
+    .about-content h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.055em;
+      margin-bottom: 18px;
+    }
+
+    .about-content p {
+      color: var(--gray);
+      margin-bottom: 18px;
+      font-size: 1.06rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .feature {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact {
+      background:
+        linear-gradient(rgba(7, 72, 102, 0.93), rgba(7, 72, 102, 0.93)),
+        radial-gradient(circle at top left, rgba(25, 163, 210, 0.7), transparent 35%);
+      color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      gap: 42px;
+      align-items: stretch;
+    }
+
+    .contact h2 {
+      font-size: clamp(2.1rem, 4vw, 3.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.055em;
+      margin-bottom: 18px;
+    }
+
+    .contact p {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      max-width: 650px;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .info-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+    }
+
+    .info-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--secondary);
+      color: var(--dark);
+      display: grid;
+      place-items: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .info-card span {
+      display: block;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .info-card strong {
+      font-size: 1.15rem;
+      color: var(--white);
+    }
+
+    .contact-panel {
+      background: var(--white);
+      color: var(--dark);
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-panel h3 {
+      color: var(--primary-dark);
+      font-size: 1.7rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+
+    .contact-panel p {
+      color: var(--gray);
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .phone-display {
+      display: block;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .phone-display span {
+      color: var(--gray);
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .phone-display strong {
+      color: var(--primary-dark);
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      letter-spacing: -0.04em;
+    }
+
+    footer {
+      background: #071d2a;
+      color: rgba(255, 255, 255, 0.75);
+      padding: 24px 0;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 960px) {
+      .top-bar .container {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav ul {
+        gap: 18px;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 620px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .container {
+        width: min(100% - 28px, var(--max-width));
+      }
+
+      .top-bar {
+        display: none;
+      }
+
+      header {
+        position: relative;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      nav {
+        width: 100%;
+      }
+
+      nav ul {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      nav a {
+        display: inline-flex;
+        padding: 8px 10px;
+      }
+
+      .nav-cta {
+        padding: 9px 14px;
+      }
+
+      .hero {
+        padding: 58px 0;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .trust-row,
+      .services-grid,
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 68px 0;
+      }
+
+      .service-card,
+      .hero-card,
+      .contact-panel {
+        padding: 24px;
+      }
+
+      .about-visual {
+        min-height: 330px;
+        padding: 24px;
+      }
+
+      .info-card {
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .logo {
+        font-size: 1.15rem;
+      }
+
+      .logo-mark {
+        width: 40px;
+        height: 40px;
+      }
+
+      h1 {
+        font-size: 2.35rem;
+      }
+
+      .hero p,
+      .section-header p,
+      .contact p {
+        font-size: 1rem;
+      }
+
+      .phone-display strong {
+        font-size: 1.35rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <div>Serving Tremonton and surrounding communities</div>
+      <a href="tel:+14357607985">Call Gilbert Plumbing & Mechanical: +1 435-760-7985</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <a href="#home" class="logo" aria-label="Gilbert Plumbing & Mechanical Home">
+          <span class="logo-mark">G</span>
+          <span>Gilbert Plumbing<br />& Mechanical</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="nav-cta" href="tel:+14357607985">Call Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">Professional Plumbing in Tremonton</div>
+            <h1>Reliable plumbing and mechanical service when you need it.</h1>
+            <p>
+              Gilbert Plumbing & Mechanical provides dependable plumbing solutions for homes and businesses throughout Tremonton. From repairs to installations, we deliver quality workmanship and honest service.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+14357607985">Call +1 435-760-7985</a>
+              <a class="btn btn-secondary" href="#services">View Services</a>
+            </div>
+
+            <div class="trust-row" aria-label="Service highlights">
+              <div class="trust-item">Local Service</div>
+              <div class="trust-item">Quality Work</div>
+              <div class="trust-item">Dependable Help</div>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="Service call information">
+            <div class="hero-card-icon">🔧</div>
+            <h2>Need a plumber?</h2>
+            <p>
+              Get practical solutions for leaks, fixtures, water heaters, drain issues, and mechanical plumbing needs.
+            </p>
+            <ul class="quick-list">
+              <li><span class="check">✓</span><span>Residential and commercial plumbing</span></li>
+              <li><span class="check">✓</span><span>Repair, replacement, and installation work</span></li>
+              <li><span class="check">✓</span><span>Friendly local service based in Tremonton</span></li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Request Service</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Our Services</div>
+          <h2 class="section-title">Complete plumbing solutions for your property.</h2>
+          <p>
+            Whether you are dealing with a small leak, upgrading fixtures, or need mechanical plumbing support, Gilbert Plumbing & Mechanical is ready to help.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🚰</div>
+            <h3>Plumbing Repairs</h3>
+            <p>
+              Prompt repair services for leaks, running toilets, broken fixtures, pipe issues, and other everyday plumbing problems.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🔥</div>
+            <h3>Water Heaters</h3>
+            <p>
+              Water heater service, troubleshooting, replacement, and installation to help keep hot water flowing reliably.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🛁</div>
+            <h3>Fixture Installation</h3>
+            <p>
+              Professional installation of faucets, sinks, toilets, showers, tubs, garbage disposals, and other plumbing fixtures.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🌀</div>
+            <h3>Drain & Pipe Service</h3>
+            <p>
+              Help with slow drains, clogs, damaged piping, and plumbing lines that need reliable repair or replacement.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Commercial Plumbing</h3>
+            <p>
+              Dependable plumbing service for local businesses, shops, offices, rental properties, and light commercial facilities.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Mechanical Plumbing</h3>
+            <p>
+              Mechanical system support and plumbing expertise for installations, upgrades, and maintenance needs.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual" aria-label="About Gilbert Plumbing and Mechanical">
+            <div class="about-badge">
+              <div class="big">Local</div>
+              <p>Serving Tremonton with professional plumbing and mechanical workmanship.</p>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="section-label">About Us</div>
+            <h2>Trusted plumbing service with a straightforward approach.</h2>
+            <p>
+              Gilbert Plumbing & Mechanical is a Tremonton-based plumbing business focused on dependable service, clear communication, and lasting results. We understand how disruptive plumbing problems can be, so we work to provide practical solutions that fit your needs.
+            </p>
+            <p>
+              From routine repairs to larger plumbing and mechanical projects, our goal is to complete every job with care, professionalism, and respect for your home or business.
+            </p>
+
+            <div class="features">
+              <div class="feature"><span class="check">✓</span> Honest Communication</div>
+              <div class="feature"><span class="check">✓</span> Professional Workmanship</div>
+              <div class="feature"><span class="check">✓</span> Residential Service</div>
+              <div class="feature"><span class="check">✓</span> Commercial Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <div class="section-label" style="color: #f2a900;">Contact Us</div>
+            <h2>Ready to schedule plumbing service?</h2>
+            <p>
+              Call Gilbert Plumbing & Mechanical today for plumbing and mechanical service in Tremonton and nearby areas. We are here to help with repairs, installations, and dependable plumbing solutions.
+            </p>
+
+            <div class="contact-info">
+              <div class="info-card">
+                <div class="info-icon">☎</div>
+                <div>
+                  <span>Phone</span>
+                  <strong><a href="tel:+14357607985">+1 435-760-7985</a></strong>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">📍</div>
+                <div>
+                  <span>Location</span>
+                  <strong>Tremonton, Utah</strong>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">🔧</div>
+                <div>
+                  <span>Service Type</span>
+                  <strong>Plumbing & Mechanical</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="contact-panel">
+            <h3>Call for service</h3>
+            <p>
+              Speak directly with Gilbert Plumbing & Mechanical about your plumbing needs.
+            </p>
+
+            <a class="phone-display" href="tel:+14357607985">
+              <span>Tap to call</span>
+              <strong>+1 435-760-7985</strong>
+            </a>
+
+            <a class="btn btn-primary" href="tel:+14357607985">Call Now</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Gilbert Plumbing & Mechanical. Serving Tremonton and surrounding areas.
+    </div>
+  </footer>
+</body>
+</html>
