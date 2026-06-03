@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PlumbElec Marketing is an internet marketing service based in Cronulla, helping trade businesses grow with strategic SEO, Google Ads, websites and digital marketing." />
+  <title>PlumbElec Marketing | Internet Marketing Services in Cronulla</title>
+  <style>
+    :root {
+      --primary: #0b5fff;
+      --primary-dark: #073fb0;
+      --secondary: #00b3a4;
+      --dark: #102033;
+      --text: #42526e;
+      --light: #f5f8fc;
+      --white: #ffffff;
+      --border: #dde6f2;
+      --shadow: 0 18px 45px rgba(16, 32, 51, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(221, 230, 242, 0.75);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--dark);
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-weight: 900;
+      box-shadow: 0 10px 25px rgba(11, 95, 255, 0.25);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-phone {
+      padding: 11px 18px;
+      background: var(--primary);
+      color: var(--white) !important;
+      border-radius: 999px;
+      box-shadow: 0 10px 24px rgba(11, 95, 255, 0.22);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(0, 179, 164, 0.18), transparent 34%),
+        radial-gradient(circle at top left, rgba(11, 95, 255, 0.15), transparent 36%),
+        linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
+      padding: 96px 0 86px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -140px;
+      bottom: -180px;
+      width: 420px;
+      height: 420px;
+      background: linear-gradient(135deg, rgba(11, 95, 255, 0.14), rgba(0, 179, 164, 0.12));
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      align-items: center;
+      gap: 58px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      background: rgba(11, 95, 255, 0.08);
+      color: var(--primary-dark);
+      border: 1px solid rgba(11, 95, 255, 0.16);
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow span {
+      width: 8px;
+      height: 8px;
+      background: var(--secondary);
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px rgba(0, 179, 164, 0.14);
+    }
+
+    h1 {
+      color: var(--dark);
+      font-size: clamp(2.45rem, 5vw, 4.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.055em;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 620px;
+      color: #4f6079;
+      margin-bottom: 34px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 14px 30px rgba(11, 95, 255, 0.26);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--dark);
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 24px rgba(16, 32, 51, 0.08);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(221, 230, 242, 0.9);
+      border-radius: 28px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+
+    .hero-card h2 {
+      font-size: 1.45rem;
+      line-height: 1.2;
+      color: var(--dark);
+      letter-spacing: -0.03em;
+    }
+
+    .badge {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(0, 179, 164, 0.12);
+      color: #00796f;
+      font-size: 0.82rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .metric {
+      padding: 18px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--dark);
+      font-size: 1.65rem;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+    }
+
+    .metric span {
+      font-size: 0.9rem;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .check-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .check-list li::before {
+      content: "✓";
+      width: 22px;
+      height: 22px;
+      flex: 0 0 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(0, 179, 164, 0.14);
+      color: #00796f;
+      font-size: 0.82rem;
+      font-weight: 900;
+      margin-top: 1px;
+    }
+
+    section {
+      padding: 88px 0;
+    }
+
+    .section-header {
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .section-kicker {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    h2.section-title {
+      color: var(--dark);
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+      margin-bottom: 16px;
+    }
+
+    .section-header p {
+      font-size: 1.05rem;
+      color: #586985;
+    }
+
+    .services {
+      background: var(--white);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 12px 30px rgba(16, 32, 51, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: rgba(11, 95, 255, 0.28);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(11, 95, 255, 0.12), rgba(0, 179, 164, 0.13));
+      color: var(--primary);
+      font-size: 1.45rem;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      color: var(--dark);
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: #586985;
+      font-size: 0.97rem;
+    }
+
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .about-panel {
+      padding: 34px;
+      background: linear-gradient(135deg, var(--dark), #173b62);
+      color: var(--white);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-panel::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      top: -90px;
+      right: -80px;
+      border-radius: 50%;
+      background: rgba(0, 179, 164, 0.22);
+    }
+
+    .about-panel::after {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      bottom: -70px;
+      left: -60px;
+      border-radius: 50%;
+      background: rgba(11, 95, 255, 0.28);
+    }
+
+    .about-panel-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-panel h3 {
+      font-size: 1.8rem;
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+      margin-bottom: 18px;
+    }
+
+    .about-panel p {
+      color: rgba(255, 255, 255, 0.82);
+      margin-bottom: 24px;
+    }
+
+    .location-box {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .location-box strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .location-box span {
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .about-content p {
+      margin-bottom: 18px;
+      font-size: 1.03rem;
+    }
+
+    .feature-list {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .feature {
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      font-weight: 800;
+      color: var(--dark);
+    }
+
+    .contact {
+      background:
+        radial-gradient(circle at top left, rgba(0, 179, 164, 0.16), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
+    }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      overflow: hidden;
+      border-radius: 30px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-info {
+      padding: 44px;
+    }
+
+    .contact-info h2 {
+      color: var(--dark);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+      margin-bottom: 16px;
+    }
+
+    .contact-info p {
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-methods {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .contact-method {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 18px;
+      border-radius: 18px;
+      background: var(--light);
+      border: 1px solid var(--border);
+    }
+
+    .contact-method-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 1.2rem;
+      flex: 0 0 46px;
+    }
+
+    .contact-method small {
+      display: block;
+      color: #687894;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .contact-method strong {
+      color: var(--dark);
+      font-size: 1.08rem;
+    }
+
+    .contact-side {
+      padding: 44px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-side h3 {
+      font-size: 1.8rem;
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+      margin-bottom: 18px;
+    }
+
+    .contact-side p {
+      color: rgba(255, 255, 255, 0.86);
+      margin-bottom: 26px;
+    }
+
+    .contact-side ul {
+      list-style: none;
+      display: grid;
+      gap: 13px;
+    }
+
+    .contact-side li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-weight: 800;
+    }
+
+    .contact-side li::before {
+      content: "✓";
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 22px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      font-size: 0.8rem;
+      margin-top: 1px;
+    }
+
+    footer {
+      padding: 28px 0;
+      background: var(--dark);
+      color: rgba(255, 255, 255, 0.74);
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        min-height: auto;
+        padding: 16px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        padding: 72px 0 68px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .nav-links {
+        font-size: 0.9rem;
+      }
+
+      .nav-phone {
+        width: 100%;
+        text-align: center;
+      }
+
+      .hero {
+        padding: 58px 0 56px;
+      }
+
+      .hero p {
+        font-size: 1.04rem;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-card {
+        padding: 22px;
+        border-radius: 22px;
+      }
+
+      .hero-card-top,
+      .metric-grid,
+      .feature-list,
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card-top {
+        display: grid;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .service-card,
+      .about-panel,
+      .contact-info,
+      .contact-side {
+        padding: 24px;
+      }
+
+      .contact-card {
+        border-radius: 22px;
+      }
+
+      .contact-method {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="logo" aria-label="PlumbElec Marketing home">
+        <span class="logo-mark">PE</span>
+        <span>PlumbElec Marketing</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-phone" href="tel:+61291000985">+61 2 9100 0985</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span></span>Internet Marketing Service in Cronulla</div>
+          <h1>Digital marketing built to generate better local leads.</h1>
+          <p>
+            PlumbElec Marketing helps service-based businesses grow online with high-performing websites,
+            SEO, paid advertising and practical marketing strategies designed to turn searches into enquiries.
+          </p>
+          <div class="hero-actions">
+            <a href="tel:+61291000985" class="btn btn-primary">Call +61 2 9100 0985</a>
+            <a href="#services" class="btn btn-secondary">Explore Services</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Marketing performance highlights">
+          <div class="hero-card-top">
+            <h2>Focused campaigns. Clear reporting. Real growth.</h2>
+            <div class="badge">Cronulla Based</div>
+          </div>
+          <div class="metric-grid">
+            <div class="metric">
+              <strong>SEO</strong>
+              <span>Improve visibility for high-intent local searches.</span>
+            </div>
+            <div class="metric">
+              <strong>Ads</strong>
+              <span>Capture ready-to-buy customers with targeted campaigns.</span>
+            </div>
+            <div class="metric">
+              <strong>Web</strong>
+              <span>Convert visitors with fast, professional landing pages.</span>
+            </div>
+            <div class="metric">
+              <strong>Leads</strong>
+              <span>Build marketing systems that support steady enquiries.</span>
+            </div>
+          </div>
+          <ul class="check-list">
+            <li>Local marketing strategy tailored to your business</li>
+            <li>Search, website and advertising support in one place</li>
+            <li>Simple communication and transparent campaign direction</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Our Services</div>
+          <h2 class="section-title">Everything your business needs to be found, trusted and contacted online.</h2>
+          <p>
+            From search visibility to conversion-focused websites, we create digital marketing solutions
+            that help local businesses compete and grow.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon">⌕</div>
+            <h3>Search Engine Optimisation</h3>
+            <p>
+              Improve your organic visibility with local SEO, keyword targeting, content optimisation
+              and technical improvements that help customers find you.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">↗</div>
+            <h3>Google Ads Management</h3>
+            <p>
+              Launch and refine paid search campaigns focused on high-intent traffic, stronger enquiry
+              quality and efficient advertising spend.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">▣</div>
+            <h3>Website & Landing Pages</h3>
+            <p>
+              Build fast, mobile-friendly pages designed to communicate value clearly and turn more
+              visitors into phone calls and leads.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">★</div>
+            <h3>Local Brand Presence</h3>
+            <p>
+              Strengthen your business profile across important online touchpoints so customers see a
+              professional, consistent and trustworthy brand.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">◉</div>
+            <h3>Conversion Strategy</h3>
+            <p>
+              Identify opportunities to improve your enquiry rate with stronger messaging, clearer calls
+              to action and smarter user journeys.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">☷</div>
+            <h3>Reporting & Insights</h3>
+            <p>
+              Understand what is working with practical campaign insights, performance tracking and
+              recommendations for ongoing improvement.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-panel">
+          <div class="about-panel-content">
+            <h3>Local knowledge with a performance marketing mindset.</h3>
+            <p>
+              Based in Cronulla, PlumbElec Marketing understands the importance of standing out in
+              competitive local markets and turning online attention into real business opportunities.
+            </p>
+            <div class="location-box">
+              <div class="contact-method-icon">⌖</div>
+              <div>
+                <strong>Cronulla, NSW</strong>
+                <span>Serving businesses locally and across Australia.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-kicker">About PlumbElec Marketing</div>
+          <h2 class="section-title">Practical internet marketing for businesses that want measurable results.</h2>
+          <p>
+            We provide clear, professional digital marketing support for businesses that want to improve
+            their online presence without unnecessary complexity. Our approach is strategic, focused and
+            built around the channels that matter most for lead generation.
+          </p>
+          <p>
+            Whether you need more local search visibility, better website performance, paid advertising
+            support or a complete digital growth plan, PlumbElec Marketing helps you move forward with
+            confidence.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature">Local SEO Focus</div>
+            <div class="feature">Mobile-First Websites</div>
+            <div class="feature">Lead Generation Strategy</div>
+            <div class="feature">Clear Marketing Advice</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-info">
+            <div class="section-kicker">Contact Us</div>
+            <h2>Ready to grow your online presence?</h2>
+            <p>
+              Speak with PlumbElec Marketing about your goals and discover how a focused internet
+              marketing strategy can help your business attract more enquiries.
+            </p>
+
+            <div class="contact-methods">
+              <a class="contact-method" href="tel:+61291000985">
+                <div class="contact-method-icon">☎</div>
+                <div>
+                  <small>Phone</small>
+                  <strong>+61 2 9100 0985</strong>
+                </div>
+              </a>
+
+              <div class="contact-method">
+                <div class="contact-method-icon">⌖</div>
+                <div>
+                  <small>Location</small>
+                  <strong>Cronulla, NSW, Australia</strong>
+                </div>
+              </div>
+            </div>
+
+            <a href="tel:+61291000985" class="btn btn-primary">Call PlumbElec Marketing</a>
+          </div>
+
+          <div class="contact-side">
+            <h3>Let’s build a stronger digital engine for your business.</h3>
+            <p>
+              We help you focus on the marketing activity most likely to create visibility, trust and
+              customer enquiries.
+            </p>
+            <ul>
+              <li>SEO and paid search campaign planning</li>
+              <li>Website and landing page optimisation</li>
+              <li>Local lead generation support</li>
+              <li>Clear recommendations and next steps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>PlumbElec Marketing</strong> &copy; 2026. Internet Marketing Service based in Cronulla. Phone: <a href="tel:+61291000985">+61 2 9100 0985</a></p>
+    </div>
+  </footer>
+</body>
+</html>
