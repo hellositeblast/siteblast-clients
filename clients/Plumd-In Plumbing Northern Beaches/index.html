@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plumd In Plumbing Northern Beaches is a trusted plumber based in North Balgowlah, servicing homes and businesses across the Northern Beaches. Call +61 426 483 191." />
+  <title>Plumd In Plumbing Northern Beaches | North Balgowlah Plumber</title>
+  <style>
+    :root {
+      --primary: #0b5f8a;
+      --primary-dark: #073f5c;
+      --secondary: #19a7ce;
+      --accent: #f5b942;
+      --light: #f4f9fc;
+      --white: #ffffff;
+      --dark: #13232f;
+      --muted: #637381;
+      --border: #dce8ef;
+      --shadow: 0 18px 45px rgba(7, 63, 92, 0.14);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.5px;
+    }
+
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      font-size: 24px;
+      box-shadow: 0 10px 25px rgba(11, 95, 138, 0.25);
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: 18px;
+      line-height: 1.1;
+    }
+
+    .logo-text small {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--secondary);
+    }
+
+    .call-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #17212b;
+      padding: 13px 20px;
+      border-radius: 999px;
+      font-weight: 800;
+      box-shadow: 0 12px 28px rgba(245, 185, 66, 0.32);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .call-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 34px rgba(245, 185, 66, 0.42);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(25, 167, 206, 0.25), transparent 34%),
+        linear-gradient(135deg, #eaf7fc 0%, #ffffff 48%, #f7fbfd 100%);
+      padding: 88px 0 80px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background: rgba(11, 95, 138, 0.08);
+      right: -180px;
+      bottom: -220px;
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(25, 167, 206, 0.12);
+      color: var(--primary-dark);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1.02;
+      letter-spacing: -2px;
+      color: var(--primary-dark);
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: var(--muted);
+      max-width: 630px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+
+    .primary-button,
+    .secondary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 16px 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .primary-button {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 14px 32px rgba(11, 95, 138, 0.28);
+    }
+
+    .primary-button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .secondary-button {
+      background: var(--white);
+      color: var(--primary-dark);
+      border: 1px solid var(--border);
+    }
+
+    .secondary-button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 610px;
+    }
+
+    .trust-item {
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 15px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      box-shadow: 0 10px 26px rgba(7, 63, 92, 0.06);
+    }
+
+    .trust-item small {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      margin-top: 2px;
+      font-size: 12px;
+    }
+
+    .hero-card {
+      background: var(--white);
+      border-radius: 30px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(220, 232, 239, 0.8);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: rgba(245, 185, 66, 0.18);
+      right: -80px;
+      top: -80px;
+    }
+
+    .card-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 22px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      font-size: 34px;
+      margin-bottom: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card h2 {
+      font-size: 30px;
+      line-height: 1.2;
+      color: var(--primary-dark);
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card p {
+      font-size: 16px;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    .check {
+      flex: 0 0 24px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(25, 167, 206, 0.16);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    section {
+      padding: 82px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 46px;
+    }
+
+    .section-heading .eyebrow {
+      margin-bottom: 14px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -1.2px;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 12px 28px rgba(7, 63, 92, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: rgba(25, 167, 206, 0.45);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: var(--light);
+      color: var(--primary);
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 21px;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+    }
+
+    .about {
+      background:
+        linear-gradient(135deg, rgba(11, 95, 138, 0.06), rgba(25, 167, 206, 0.04)),
+        var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-panel {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: var(--white);
+      border-radius: 30px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-panel::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.09);
+      top: -100px;
+      right: -90px;
+    }
+
+    .about-panel::after {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: rgba(245, 185, 66, 0.23);
+      bottom: -70px;
+      left: -60px;
+    }
+
+    .about-panel-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-panel h3 {
+      font-size: 34px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      letter-spacing: -0.8px;
+    }
+
+    .about-panel p {
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 17px;
+    }
+
+    .about-badge {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.13);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 22px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .about-badge strong {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+
+    .about-content h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -1.2px;
+      color: var(--primary-dark);
+      margin-bottom: 18px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .feature {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .feature strong {
+      display: block;
+      color: var(--primary-dark);
+      margin-bottom: 3px;
+    }
+
+    .feature span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact {
+      background: var(--white);
+      padding-bottom: 42px;
+    }
+
+    .contact-card {
+      background:
+        radial-gradient(circle at top right, rgba(25, 167, 206, 0.18), transparent 30%),
+        linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: var(--white);
+      border-radius: 32px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 36px;
+      align-items: center;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .contact-card::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: rgba(245, 185, 66, 0.2);
+      right: -90px;
+      bottom: -110px;
+    }
+
+    .contact-content,
+    .contact-box {
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-content h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+
+    .contact-content p {
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 18px;
+      max-width: 650px;
+    }
+
+    .contact-box {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 24px;
+      padding: 26px;
+    }
+
+    .contact-box p {
+      color: rgba(255, 255, 255, 0.78);
+      margin-bottom: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 13px;
+    }
+
+    .phone-link {
+      display: block;
+      font-size: clamp(26px, 4vw, 38px);
+      line-height: 1.1;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 18px;
+      letter-spacing: -0.8px;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: rgba(255, 255, 255, 0.88);
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 28px 0 36px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer-links {
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    @media (max-width: 920px) {
+      .nav {
+        min-height: auto;
+        padding: 16px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .nav-links .desktop-call {
+        width: 100%;
+      }
+
+      .call-button {
+        width: 100%;
+      }
+
+      .hero {
+        padding: 62px 0;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        order: -1;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-panel {
+        min-height: 320px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .logo-text span {
+        font-size: 16px;
+      }
+
+      .logo-text small {
+        font-size: 11px;
+      }
+
+      .nav-links {
+        font-size: 14px;
+      }
+
+      .nav-links li:not(.desktop-call) {
+        flex: 1;
+      }
+
+      .nav-links a:not(.call-button) {
+        display: block;
+        text-align: center;
+        padding: 8px 6px;
+        background: var(--light);
+        border-radius: 999px;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.4px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .primary-button,
+      .secondary-button {
+        width: 100%;
+      }
+
+      .trust-row {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .services-grid,
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card,
+      .about-panel,
+      .contact-card {
+        border-radius: 24px;
+        padding: 26px;
+      }
+
+      .service-card {
+        padding: 24px;
+      }
+
+      .contact-card {
+        padding: 30px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="Plumd In Plumbing Northern Beaches home">
+        <div class="logo-mark">💧</div>
+        <div class="logo-text">
+          <span>Plumd In Plumbing</span>
+          <small>Northern Beaches</small>
+        </div>
+      </a>
+
+      <ul class="nav-links" aria-label="Main navigation">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="desktop-call"><a class="call-button" href="tel:+61426483191">Call +61 426 483 191</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">Local North Balgowlah Plumber</div>
+          <h1>Reliable plumbing across the <span>Northern Beaches</span>.</h1>
+          <p>
+            Plumd In Plumbing Northern Beaches provides professional, friendly and dependable plumbing services for homes and businesses in North Balgowlah and surrounding suburbs.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-button" href="tel:+61426483191">Call Now: +61 426 483 191</a>
+            <a class="secondary-button" href="#services">View Services</a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">
+              Local Service
+              <small>Based in North Balgowlah</small>
+            </div>
+            <div class="trust-item">
+              Quality Work
+              <small>Clean, careful & reliable</small>
+            </div>
+            <div class="trust-item">
+              Fast Response
+              <small>For urgent plumbing needs</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-icon">🔧</div>
+          <h2>Need a plumber today?</h2>
+          <p>
+            From leaking taps to blocked drains and general plumbing repairs, get prompt help from a local Northern Beaches plumber.
+          </p>
+          <ul class="service-list">
+            <li><span class="check">✓</span><span>Residential plumbing repairs</span></li>
+            <li><span class="check">✓</span><span>Blocked drains and pipe issues</span></li>
+            <li><span class="check">✓</span><span>Hot water system assistance</span></li>
+            <li><span class="check">✓</span><span>Bathroom, kitchen and laundry plumbing</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Our Services</div>
+          <h2>Complete plumbing solutions for your property</h2>
+          <p>
+            Practical, high-quality plumbing services delivered with clear communication and respect for your home or workplace.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🚰</div>
+            <h3>General Plumbing</h3>
+            <p>Repairs, maintenance, installations and everyday plumbing support for kitchens, bathrooms, laundries and outdoor areas.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🛁</div>
+            <h3>Blocked Drains</h3>
+            <p>Assistance with slow drains, blocked sinks, toilets, showers and stormwater issues to help restore normal flow.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🔥</div>
+            <h3>Hot Water Systems</h3>
+            <p>Help with hot water problems, repairs, replacements and system advice to keep your household running comfortably.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">💦</div>
+            <h3>Leaks & Burst Pipes</h3>
+            <p>Detection and repair of leaks, dripping taps, burst pipes and water damage risks before they become bigger problems.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🏠</div>
+            <h3>Renovation Plumbing</h3>
+            <p>Plumbing support for bathroom, kitchen and laundry upgrades, including fixture installation and pipework changes.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Maintenance Plumbing</h3>
+            <p>Routine checks and preventative maintenance for homeowners, landlords and businesses across the Northern Beaches.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-panel">
+          <div class="about-panel-content">
+            <h3>Your local plumbing team in North Balgowlah.</h3>
+            <p>
+              We understand the homes, infrastructure and coastal conditions of the Northern Beaches, allowing us to provide practical solutions that last.
+            </p>
+          </div>
+          <div class="about-badge">
+            <strong>Local. Reliable. Professional.</strong>
+            <span>Plumbing done properly, with friendly service from start to finish.</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="eyebrow">About Plumd In Plumbing</div>
+          <h2>Trusted plumbing service with a focus on honest workmanship</h2>
+          <p>
+            Plumd In Plumbing Northern Beaches is based in North Balgowlah and services the wider Northern Beaches community. We help homeowners and businesses with dependable plumbing repairs, maintenance and installations.
+          </p>
+          <p>
+            Whether you are dealing with an urgent leak, planning a renovation or simply need a reliable plumber for regular maintenance, we aim to make the process straightforward, tidy and stress-free.
+          </p>
+
+          <div class="feature-grid">
+            <div class="feature">
+              <span class="check">✓</span>
+              <div>
+                <strong>Clear Communication</strong>
+                <span>Know what is happening and what to expect.</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span class="check">✓</span>
+              <div>
+                <strong>Respectful Service</strong>
+                <span>We treat your property with care.</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span class="check">✓</span>
+              <div>
+                <strong>Local Knowledge</strong>
+                <span>Servicing North Balgowlah and nearby suburbs.</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <span class="check">✓</span>
+              <div>
+                <strong>Quality Results</strong>
+                <span>Reliable solutions for lasting performance.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-content">
+            <h2>Ready to book a plumber?</h2>
+            <p>
+              For plumbing repairs, maintenance or urgent assistance across North Balgowlah and the Northern Beaches, contact Plumd In Plumbing Northern Beaches today.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <span>📍</span>
+                <span>Based in North Balgowlah, servicing the Northern Beaches</span>
+              </div>
+              <div class="contact-detail">
+                <span>🛠️</span>
+                <span>Residential and light commercial plumbing services</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <p>Call us directly</p>
+            <a class="phone-link" href="tel:+61426483191">+61 426 483 191</a>
+            <a class="call-button" href="tel:+61426483191">Tap to Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Plumd In Plumbing Northern Beaches. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="tel:+61426483191">+61 426 483 191</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
