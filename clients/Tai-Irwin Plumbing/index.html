@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tai Irwin Plumbing | Professional Plumber in Forestville</title>
+  <meta name="description" content="Tai Irwin Plumbing provides professional, reliable plumbing services in Forestville and surrounding areas. Call +61 2 9986 1880 for trusted plumbing support." />
+  <style>
+    :root {
+      --primary: #0b5f8a;
+      --primary-dark: #073f5c;
+      --accent: #23a6d5;
+      --light: #f4f9fc;
+      --white: #ffffff;
+      --dark: #1f2933;
+      --muted: #5f6c7b;
+      --border: #d9e6ee;
+      --shadow: 0 16px 40px rgba(7, 63, 92, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.02em;
+      font-size: 1.15rem;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(11, 95, 138, 0.24);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-phone {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(11, 95, 138, 0.22);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .nav-phone:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+      color: var(--white) !important;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 90% 15%, rgba(35, 166, 213, 0.22), transparent 34%),
+        linear-gradient(135deg, #eff9fd 0%, #ffffff 52%, #eaf6fb 100%);
+      padding: 90px 0 80px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: auto -120px -180px auto;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(11, 95, 138, 0.08);
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(35, 166, 213, 0.12);
+      color: var(--primary-dark);
+      font-weight: 800;
+      font-size: 0.88rem;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(2.45rem, 5vw, 4.6rem);
+      line-height: 1.04;
+      letter-spacing: -0.055em;
+      color: var(--primary-dark);
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 14px 28px rgba(11, 95, 138, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--primary-dark);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .hero-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .hero-card-top {
+      border-radius: 22px;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: var(--white);
+      padding: 30px;
+      margin-bottom: 22px;
+    }
+
+    .hero-card-top h2 {
+      font-size: 1.75rem;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-card-top p {
+      color: rgba(255, 255, 255, 0.86);
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .hero-list {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+    }
+
+    .hero-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    .check {
+      flex: 0 0 24px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(35, 166, 213, 0.16);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 0.9rem;
+      font-weight: 900;
+    }
+
+    section {
+      padding: 86px 0;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading.center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--primary);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+      color: var(--primary-dark);
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .services {
+      background: var(--white);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 10px 28px rgba(7, 63, 92, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(35, 166, 213, 0.5);
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(11, 95, 138, 0.12), rgba(35, 166, 213, 0.18));
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 1.55rem;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 1.22rem;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .about-panel {
+      background: var(--white);
+      border-radius: 28px;
+      border: 1px solid var(--border);
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .stat {
+      border-radius: 18px;
+      padding: 24px;
+      background: linear-gradient(135deg, #f7fcff, #eef8fc);
+      border: 1px solid var(--border);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--primary);
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 1.04rem;
+    }
+
+    .about-points {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .about-points li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .contact {
+      background:
+        linear-gradient(rgba(7, 63, 92, 0.92), rgba(7, 63, 92, 0.92)),
+        radial-gradient(circle at top right, rgba(35, 166, 213, 0.4), transparent 40%);
+      color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.85fr;
+      gap: 40px;
+      align-items: stretch;
+    }
+
+    .contact h2,
+    .contact .section-label {
+      color: var(--white);
+    }
+
+    .contact .section-heading {
+      margin-bottom: 28px;
+    }
+
+    .contact .section-heading p {
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .contact-item-icon {
+      width: 44px;
+      height: 44px;
+      flex: 0 0 44px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.16);
+      display: grid;
+      place-items: center;
+      font-size: 1.25rem;
+    }
+
+    .contact-item span {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.9rem;
+      margin-bottom: 2px;
+    }
+
+    .contact-item strong {
+      color: var(--white);
+      font-size: 1.08rem;
+    }
+
+    .contact-card {
+      background: var(--white);
+      color: var(--dark);
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-card h3 {
+      font-size: 1.6rem;
+      line-height: 1.18;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .phone-large {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 18px 20px;
+      border-radius: 16px;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 1.18rem;
+      font-weight: 900;
+      box-shadow: 0 12px 26px rgba(11, 95, 138, 0.22);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .phone-large:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .small-note {
+      margin-top: 18px;
+      font-size: 0.92rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    footer {
+      background: #052f45;
+      color: rgba(255, 255, 255, 0.72);
+      padding: 24px 0;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        flex-wrap: wrap;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+        padding-top: 8px;
+      }
+
+      .hero {
+        padding: 64px 0;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 620px;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .nav {
+        min-height: auto;
+      }
+
+      .logo {
+        font-size: 1rem;
+      }
+
+      .logo-mark {
+        width: 38px;
+        height: 38px;
+      }
+
+      .nav-phone {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+      }
+
+      .nav-links {
+        font-size: 0.9rem;
+        gap: 14px;
+      }
+
+      .hero {
+        padding: 54px 0 58px;
+      }
+
+      .hero p {
+        font-size: 1.04rem;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-card,
+      .about-panel,
+      .contact-card {
+        padding: 24px;
+        border-radius: 22px;
+      }
+
+      .hero-card-top {
+        padding: 24px;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .service-grid,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        padding: 24px;
+      }
+
+      .contact-item {
+        align-items: flex-start;
+      }
+
+      .contact-item strong {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home" class="logo" aria-label="Tai Irwin Plumbing home">
+          <span class="logo-mark">TI</span>
+          <span>Tai Irwin Plumbing</span>
+        </a>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-phone" href="tel:+61299861880">Call +61 2 9986 1880</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Professional plumber in Forestville</div>
+            <h1>Reliable plumbing services when you need them most.</h1>
+            <p>
+              Tai Irwin Plumbing delivers dependable, high-quality plumbing solutions for homes and businesses across Forestville and surrounding areas.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+61299861880">Call Now: +61 2 9986 1880</a>
+              <a class="btn btn-secondary" href="#services">View Services</a>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Plumbing highlights">
+            <div class="hero-card-top">
+              <h2>Local, trusted and ready to help</h2>
+              <p>From urgent repairs to planned plumbing work, get practical advice and professional workmanship.</p>
+            </div>
+            <ul class="hero-list">
+              <li><span class="check">✓</span><span>Prompt plumbing repairs and maintenance</span></li>
+              <li><span class="check">✓</span><span>Residential and commercial plumbing support</span></li>
+              <li><span class="check">✓</span><span>Friendly service from a Forestville-based plumber</span></li>
+              <li><span class="check">✓</span><span>Clear communication and quality workmanship</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading center">
+          <div class="section-label">Our Services</div>
+          <h2>Complete plumbing solutions for your property</h2>
+          <p>
+            Whether it is a leak, blockage, installation or general maintenance, Tai Irwin Plumbing provides professional service with attention to detail.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon">🔧</div>
+            <h3>General Plumbing</h3>
+            <p>Reliable repairs, maintenance and plumbing support for kitchens, bathrooms, laundries and outdoor areas.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">💧</div>
+            <h3>Leak Detection & Repairs</h3>
+            <p>Fast assistance for leaking taps, pipes, toilets and fixtures to help prevent damage and water waste.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🚿</div>
+            <h3>Bathroom & Kitchen Plumbing</h3>
+            <p>Professional plumbing for renovations, fixture replacements, sinks, showers, toilets and appliances.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🌀</div>
+            <h3>Blocked Drains</h3>
+            <p>Practical solutions for slow or blocked drains, helping restore flow and reduce recurring drainage issues.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🔥</div>
+            <h3>Hot Water Plumbing</h3>
+            <p>Support for hot water system issues, replacements and plumbing connections to keep your household running.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">🏠</div>
+            <h3>Maintenance Plumbing</h3>
+            <p>Scheduled maintenance and preventative checks for residential and commercial properties in Forestville.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-panel">
+            <div class="stats">
+              <div class="stat">
+                <strong>Local</strong>
+                <span>Forestville-based service</span>
+              </div>
+              <div class="stat">
+                <strong>Quality</strong>
+                <span>Professional workmanship</span>
+              </div>
+              <div class="stat">
+                <strong>Prompt</strong>
+                <span>Responsive support</span>
+              </div>
+              <div class="stat">
+                <strong>Trusted</strong>
+                <span>Friendly plumbing advice</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="section-heading">
+              <div class="section-label">About Tai Irwin Plumbing</div>
+              <h2>Your local plumbing professional in Forestville</h2>
+              <p>
+                Tai Irwin Plumbing is committed to providing dependable plumbing services with a focus on honest communication, practical solutions and long-lasting results.
+              </p>
+              <p>
+                Serving Forestville and nearby communities, the business supports homeowners, property managers and local businesses with a broad range of plumbing needs.
+              </p>
+            </div>
+
+            <ul class="about-points">
+              <li><span class="check">✓</span><span>Clear advice before work begins</span></li>
+              <li><span class="check">✓</span><span>Careful, tidy and respectful service</span></li>
+              <li><span class="check">✓</span><span>Solutions tailored to your plumbing issue</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <div class="section-heading">
+              <div class="section-label">Contact Us</div>
+              <h2>Need a plumber in Forestville?</h2>
+              <p>
+                For plumbing repairs, maintenance or enquiries, contact Tai Irwin Plumbing today. Call directly to discuss your plumbing needs and arrange service.
+              </p>
+            </div>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-item-icon">📞</div>
+                <div>
+                  <span>Phone</span>
+                  <strong><a href="tel:+61299861880">+61 2 9986 1880</a></strong>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">📍</div>
+                <div>
+                  <span>Location</span>
+                  <strong>Forestville, NSW</strong>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">🛠️</div>
+                <div>
+                  <span>Service Area</span>
+                  <strong>Forestville and surrounding areas</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="contact-card">
+            <h3>Speak with Tai Irwin Plumbing</h3>
+            <p>
+              Get professional plumbing help for leaks, blocked drains, repairs, installations and maintenance.
+            </p>
+            <a class="phone-large" href="tel:+61299861880">Call +61 2 9986 1880</a>
+            <div class="small-note">Tap to call from your mobile device.</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Tai Irwin Plumbing</strong> &copy; 2026. Professional plumbing services in Forestville.</p>
+    </div>
+  </footer>
+</body>
+</html>
