@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Instaplumb provides reliable, professional plumbing services. Call +61 418 243 079 for fast plumbing assistance." />
+  <title>Instaplumb | Professional Plumbing Services</title>
+  <style>
+    :root {
+      --primary: #0b5ed7;
+      --primary-dark: #084aa8;
+      --secondary: #00a6d6;
+      --dark: #102033;
+      --muted: #64748b;
+      --light: #f5f9fc;
+      --white: #ffffff;
+      --accent: #ffb703;
+      --border: #dbe5ef;
+      --shadow: 0 18px 45px rgba(16, 32, 51, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.45rem;
+      color: var(--dark);
+      letter-spacing: -0.03em;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-weight: 900;
+      box-shadow: 0 10px 24px rgba(11, 94, 215, 0.25);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    nav a {
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .header-call {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 800;
+      box-shadow: 0 10px 20px rgba(11, 94, 215, 0.22);
+      transition: transform 0.2s ease, background 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .header-call:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(0, 166, 214, 0.18), transparent 28%),
+        linear-gradient(135deg, #eef8ff 0%, #ffffff 48%, #f4fbff 100%);
+      padding: 88px 0 82px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -160px;
+      top: 70px;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(11, 94, 215, 0.08);
+      z-index: 0;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(11, 94, 215, 0.1);
+      color: var(--primary-dark);
+      font-weight: 800;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow span {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px rgba(255, 183, 3, 0.18);
+    }
+
+    h1 {
+      font-size: clamp(2.45rem, 5vw, 4.8rem);
+      line-height: 1.02;
+      letter-spacing: -0.06em;
+      margin-bottom: 22px;
+      color: var(--dark);
+    }
+
+    .hero p {
+      font-size: 1.16rem;
+      color: var(--muted);
+      max-width: 610px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 22px;
+      border-radius: 12px;
+      font-weight: 850;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 16px 30px rgba(11, 94, 215, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--dark);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(16, 32, 51, 0.08);
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 650px;
+    }
+
+    .trust-item {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(219, 229, 239, 0.9);
+      border-radius: 14px;
+      padding: 15px;
+      font-weight: 800;
+      color: var(--dark);
+      box-shadow: 0 10px 24px rgba(16, 32, 51, 0.06);
+    }
+
+    .trust-item small {
+      display: block;
+      margin-top: 3px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .hero-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 8px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+    }
+
+    .card-visual {
+      min-height: 350px;
+      border-radius: 22px;
+      background:
+        linear-gradient(rgba(16, 32, 51, 0.1), rgba(16, 32, 51, 0.45)),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23eaf6ff'/%3E%3Cg opacity='0.95'%3E%3Crect x='100' y='125' width='600' height='350' rx='32' fill='%23ffffff'/%3E%3Cpath d='M185 380h260c45 0 82-37 82-82v-32h-52v32c0 16-14 30-30 30H185v52z' fill='%230b5ed7'/%3E%3Cpath d='M475 203h95c33 0 60 27 60 60v65h-52v-65c0-4-4-8-8-8h-95v-52z' fill='%2300a6d6'/%3E%3Ccircle cx='185' cy='354' r='44' fill='%23ffb703'/%3E%3Ccircle cx='185' cy='354' r='20' fill='%23ffffff'/%3E%3Crect x='238' y='212' width='178' height='52' rx='18' fill='%23102033'/%3E%3Crect x='260' y='230' width='88' height='16' rx='8' fill='%23ffffff' opacity='0.88'/%3E%3Cpath d='M610 120c34 52 62 93 62 126 0 43-28 73-62 73s-62-30-62-73c0-33 28-74 62-126z' fill='%230b5ed7' opacity='0.9'/%3E%3Ccircle cx='610' cy='246' r='25' fill='%23ffffff' opacity='0.9'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      padding: 22px;
+    }
+
+    .emergency-box {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      box-shadow: 0 15px 30px rgba(16, 32, 51, 0.16);
+    }
+
+    .emergency-box strong {
+      display: block;
+      font-size: 1.12rem;
+      margin-bottom: 5px;
+    }
+
+    .emergency-box a {
+      color: var(--primary);
+      font-size: 1.45rem;
+      font-weight: 900;
+    }
+
+    section {
+      padding: 82px 0;
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin: 0 auto 44px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--primary);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.82rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.12;
+      letter-spacing: -0.045em;
+      margin-bottom: 14px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 12px 30px rgba(16, 32, 51, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(11, 94, 215, 0.35);
+      box-shadow: 0 20px 40px rgba(16, 32, 51, 0.1);
+    }
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: rgba(11, 94, 215, 0.1);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .service-card p {
+      color: var(--muted);
+    }
+
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .about-panel {
+      background: var(--white);
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .about-panel h2 {
+      margin-bottom: 18px;
+    }
+
+    .about-panel p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      flex: 0 0 24px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(0, 166, 214, 0.12);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      margin-top: 1px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .stat {
+      min-height: 160px;
+      border-radius: 22px;
+      padding: 24px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 30px rgba(16, 32, 51, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .stat strong {
+      font-size: 2.2rem;
+      line-height: 1;
+      color: var(--primary);
+      letter-spacing: -0.04em;
+      margin-bottom: 9px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .contact {
+      background:
+        linear-gradient(rgba(16, 32, 51, 0.88), rgba(16, 32, 51, 0.88)),
+        radial-gradient(circle at 20% 10%, rgba(0, 166, 214, 0.35), transparent 32%),
+        var(--dark);
+      color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      gap: 40px;
+      align-items: stretch;
+    }
+
+    .contact h2 {
+      color: var(--white);
+    }
+
+    .contact p {
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 1.08rem;
+      margin-bottom: 24px;
+      max-width: 640px;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 24px;
+      padding: 32px;
+      backdrop-filter: blur(8px);
+    }
+
+    .phone-display {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 22px;
+      border-radius: 16px;
+      background: var(--white);
+      color: var(--dark);
+      font-size: clamp(1.2rem, 3vw, 1.7rem);
+      font-weight: 900;
+      box-shadow: 0 18px 34px rgba(0, 0, 0, 0.18);
+      margin: 10px 0 22px;
+    }
+
+    .contact-details {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .contact-details li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 700;
+    }
+
+    .contact-details span {
+      color: var(--accent);
+      font-weight: 900;
+    }
+
+    .quote-box {
+      background: var(--white);
+      color: var(--dark);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .quote-box h3 {
+      font-size: 1.55rem;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+    }
+
+    .quote-box p {
+      color: var(--muted);
+      margin-bottom: 22px;
+      font-size: 1rem;
+    }
+
+    .quote-box .btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    footer {
+      background: #07111f;
+      color: rgba(255, 255, 255, 0.72);
+      padding: 26px 0;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 920px) {
+      nav ul {
+        display: none;
+      }
+
+      .hero {
+        padding: 66px 0 64px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 620px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .navbar {
+        min-height: 68px;
+      }
+
+      .logo {
+        font-size: 1.2rem;
+      }
+
+      .logo-icon {
+        width: 38px;
+        height: 38px;
+      }
+
+      .header-call {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+      }
+
+      .hero {
+        padding: 48px 0 54px;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .trust-row {
+        grid-template-columns: 1fr;
+      }
+
+      .card-visual {
+        min-height: 280px;
+        padding: 16px;
+      }
+
+      .emergency-box a {
+        font-size: 1.2rem;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .services-grid,
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card,
+      .about-panel,
+      .contact-card,
+      .quote-box {
+        padding: 24px;
+      }
+
+      .phone-display {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="#top" class="logo" aria-label="Instaplumb home">
+        <span class="logo-icon">IP</span>
+        <span>Instaplumb</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="header-call" href="tel:+61418243079">Call +61 418 243 079</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span></span> Reliable Plumbing Solutions</div>
+          <h1>Fast, professional plumbing when you need it most.</h1>
+          <p>
+            Instaplumb provides dependable plumbing services for homes and businesses, from urgent repairs to maintenance, installations and everyday plumbing support.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+61418243079">Call Now</a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">
+              Prompt Response
+              <small>Quick help for plumbing issues</small>
+            </div>
+            <div class="trust-item">
+              Quality Work
+              <small>Neat, reliable workmanship</small>
+            </div>
+            <div class="trust-item">
+              Local Service
+              <small>Friendly plumbing support</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Instaplumb service highlight">
+          <div class="card-visual">
+            <div class="emergency-box">
+              <strong>Need a plumber today?</strong>
+              <a href="tel:+61418243079">+61 418 243 079</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Our Services</div>
+          <h2>Complete plumbing services for every property.</h2>
+          <p>
+            Whether it is a leaking tap, blocked drain, hot water issue or a planned installation, Instaplumb is ready to help with practical, professional solutions.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>General Plumbing Repairs</h3>
+            <p>Reliable repairs for leaks, taps, toilets, pipes and everyday plumbing faults around your home or business.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🚿</div>
+            <h3>Bathroom & Kitchen Plumbing</h3>
+            <p>Installation and repair support for sinks, showers, mixers, vanities, toilets and kitchen plumbing fixtures.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">💧</div>
+            <h3>Leak Detection & Fixes</h3>
+            <p>Prompt investigation and repair of visible or hidden leaks to help prevent water damage and wasted water.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🌀</div>
+            <h3>Blocked Drains</h3>
+            <p>Assistance with slow, blocked or overflowing drains using effective methods to get water flowing again.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🔥</div>
+            <h3>Hot Water Systems</h3>
+            <p>Help with hot water faults, replacements and installations so your property stays comfortable year-round.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🏠</div>
+            <h3>Maintenance Plumbing</h3>
+            <p>Preventive plumbing maintenance for residential and commercial properties to reduce breakdowns and surprises.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-panel">
+          <div class="section-label">About Instaplumb</div>
+          <h2>Professional service with a practical approach.</h2>
+          <p>
+            Instaplumb is focused on delivering honest advice, efficient service and quality plumbing workmanship. We understand that plumbing problems can be stressful, so we aim to make the process simple from your first call through to completion.
+          </p>
+          <p>
+            With attention to detail and a commitment to customer care, Instaplumb helps keep your plumbing systems working safely and efficiently.
+          </p>
+
+          <ul class="check-list">
+            <li>Clear communication from start to finish</li>
+            <li>Clean, respectful work at your property</li>
+            <li>Solutions for urgent repairs and planned work</li>
+            <li>Friendly, dependable plumbing support</li>
+          </ul>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat">
+            <strong>Fast</strong>
+            <span>Response-focused plumbing assistance</span>
+          </div>
+          <div class="stat">
+            <strong>Clean</strong>
+            <span>Respectful service and tidy workmanship</span>
+          </div>
+          <div class="stat">
+            <strong>Reliable</strong>
+            <span>Dependable repairs and installations</span>
+          </div>
+          <div class="stat">
+            <strong>Helpful</strong>
+            <span>Clear advice for your plumbing needs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <div class="section-label">Contact Us</div>
+          <h2>Book a plumber or request urgent assistance.</h2>
+          <p>
+            For professional plumbing service, call Instaplumb today. We are ready to discuss your plumbing issue and arrange the right solution.
+          </p>
+
+          <a class="phone-display" href="tel:+61418243079">📞 +61 418 243 079</a>
+
+          <ul class="contact-details">
+            <li><span>Phone:</span> <a href="tel:+61418243079">+61 418 243 079</a></li>
+            <li><span>Services:</span> Plumbing repairs, installations, maintenance and urgent plumbing support</li>
+            <li><span>Business:</span> Instaplumb</li>
+          </ul>
+        </div>
+
+        <div class="quote-box">
+          <h3>Ready to get started?</h3>
+          <p>
+            Call now to speak with Instaplumb about your plumbing needs. For the fastest response, have a brief description of the issue ready.
+          </p>
+          <a class="btn btn-primary" href="tel:+61418243079">Call Instaplumb</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 <strong>Instaplumb</strong>. All rights reserved. | Phone: <a href="tel:+61418243079">+61 418 243 079</a></p>
+    </div>
+  </footer>
+</body>
+</html>
