@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Today Plumber Mona Vale | Professional Plumbing Services</title>
+  <meta name="description" content="Service Today Plumber Mona Vale provides reliable residential and commercial plumbing services in Mona Vale. Call +61 488 814 101 for prompt plumbing assistance." />
+  <style>
+    :root {
+      --primary: #005eb8;
+      --primary-dark: #003f7d;
+      --accent: #00a6d6;
+      --dark: #102033;
+      --text: #4a5568;
+      --light: #f5f9fc;
+      --white: #ffffff;
+      --border: #dce6ef;
+      --shadow: 0 18px 45px rgba(16, 32, 51, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 78px;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -0.4px;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-size: 22px;
+      box-shadow: 0 8px 18px rgba(0, 94, 184, 0.25);
+    }
+
+    .logo span {
+      display: block;
+      font-size: 18px;
+      line-height: 1.15;
+    }
+
+    .logo small {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-phone {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--primary);
+      color: var(--white);
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      box-shadow: 0 10px 22px rgba(0, 94, 184, 0.24);
+      transition: 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav-phone:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(0, 166, 214, 0.18), transparent 28%),
+        linear-gradient(135deg, #edf7ff 0%, #ffffff 56%, #eaf8fc 100%);
+      padding: 94px 0 88px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -140px;
+      top: 70px;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(0, 94, 184, 0.08);
+      z-index: 0;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 54px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--white);
+      color: var(--primary);
+      border: 1px solid rgba(0, 94, 184, 0.18);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-weight: 800;
+      font-size: 14px;
+      box-shadow: 0 8px 22px rgba(16, 32, 51, 0.08);
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.03;
+      color: var(--dark);
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 620px;
+      margin-bottom: 32px;
+      color: #445165;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.2s ease;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 14px 26px rgba(0, 94, 184, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      color: var(--primary);
+      background: var(--white);
+      border-color: rgba(0, 94, 184, 0.18);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .hero-card {
+      background: var(--white);
+      border-radius: 28px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(220, 230, 239, 0.9);
+      position: relative;
+    }
+
+    .hero-card-top {
+      border-radius: 22px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: var(--white);
+      padding: 30px;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero-card-top::after {
+      content: "🔧";
+      position: absolute;
+      right: 22px;
+      bottom: 4px;
+      font-size: 116px;
+      opacity: 0.18;
+      transform: rotate(-12deg);
+    }
+
+    .hero-card-top h2 {
+      font-size: 30px;
+      line-height: 1.15;
+      max-width: 320px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card-top p {
+      color: rgba(255, 255, 255, 0.88);
+      margin: 12px 0 0;
+      font-size: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .quick-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .quick-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    .check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(0, 166, 214, 0.13);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      flex: 0 0 24px;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    section {
+      padding: 86px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 48px;
+    }
+
+    .eyebrow {
+      color: var(--primary);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .section-header h2,
+    .about-content h2,
+    .contact-content h2 {
+      color: var(--dark);
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+
+    .section-header p {
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    .services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 10px 28px rgba(16, 32, 51, 0.06);
+      transition: 0.2s ease;
+      min-height: 250px;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: rgba(0, 94, 184, 0.22);
+    }
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(0, 94, 184, 0.12), rgba(0, 166, 214, 0.16));
+      display: grid;
+      place-items: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      color: var(--dark);
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-visual {
+      background:
+        linear-gradient(rgba(0, 94, 184, 0.78), rgba(0, 63, 125, 0.84)),
+        radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.2), transparent 34%);
+      border-radius: 28px;
+      min-height: 430px;
+      padding: 34px;
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-visual::before {
+      content: "";
+      position: absolute;
+      top: -90px;
+      right: -90px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.13);
+    }
+
+    .about-visual::after {
+      content: "🚿";
+      position: absolute;
+      top: 44px;
+      left: 38px;
+      font-size: 112px;
+      opacity: 0.22;
+    }
+
+    .about-visual h3 {
+      font-size: 30px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-visual p {
+      color: rgba(255, 255, 255, 0.88);
+      position: relative;
+      z-index: 1;
+      max-width: 390px;
+    }
+
+    .about-content .eyebrow,
+    .contact-content .eyebrow {
+      margin-bottom: 10px;
+    }
+
+    .about-content p {
+      margin-bottom: 18px;
+      font-size: 17px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 11px;
+      align-items: center;
+      padding: 14px;
+      border-radius: 14px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      color: var(--dark);
+      font-weight: 800;
+    }
+
+    .contact {
+      background: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 38px;
+      align-items: stretch;
+    }
+
+    .contact-content {
+      background: linear-gradient(135deg, var(--dark), var(--primary-dark));
+      color: var(--white);
+      border-radius: 28px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-content h2,
+    .contact-content .eyebrow {
+      color: var(--white);
+    }
+
+    .contact-content p {
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 17px;
+      margin-bottom: 26px;
+    }
+
+    .phone-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+
+    .phone-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--accent);
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      flex: 0 0 48px;
+    }
+
+    .phone-box small {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .phone-box strong {
+      display: block;
+      font-size: 24px;
+      color: var(--white);
+    }
+
+    .contact-list {
+      list-style: none;
+      display: grid;
+      gap: 13px;
+      margin-top: 8px;
+    }
+
+    .contact-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .contact-panel {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 36px;
+      background: var(--light);
+      box-shadow: 0 10px 28px rgba(16, 32, 51, 0.06);
+    }
+
+    .contact-panel h3 {
+      color: var(--dark);
+      font-size: 28px;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .contact-panel p {
+      margin-bottom: 24px;
+      font-size: 17px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .info-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .info-card strong {
+      display: block;
+      color: var(--dark);
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+
+    .info-card span {
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .cta-strip {
+      background: var(--white);
+      border: 1px solid rgba(0, 94, 184, 0.16);
+      border-radius: 18px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .cta-strip strong {
+      color: var(--dark);
+      font-size: 18px;
+      display: block;
+    }
+
+    .cta-strip span {
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    footer {
+      background: var(--dark);
+      color: rgba(255, 255, 255, 0.76);
+      padding: 30px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    .mobile-call {
+      display: none;
+      position: fixed;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      z-index: 1001;
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 15px 20px;
+      border-radius: 999px;
+      font-weight: 900;
+      box-shadow: 0 14px 30px rgba(0, 94, 184, 0.35);
+    }
+
+    @media (max-width: 940px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 620px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-visual {
+        min-height: 340px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      header {
+        position: static;
+      }
+
+      .nav {
+        min-height: 72px;
+      }
+
+      .logo-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .logo span {
+        font-size: 16px;
+      }
+
+      .nav-phone {
+        display: none;
+      }
+
+      .hero {
+        padding: 54px 0 58px;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.4px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-card {
+        padding: 18px;
+        border-radius: 22px;
+      }
+
+      .hero-card-top {
+        padding: 24px;
+        min-height: 210px;
+      }
+
+      .hero-card-top h2 {
+        font-size: 25px;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .section-header {
+        margin-bottom: 34px;
+      }
+
+      .services-grid,
+      .features,
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        min-height: auto;
+      }
+
+      .about-visual,
+      .contact-content,
+      .contact-panel {
+        border-radius: 22px;
+        padding: 26px;
+      }
+
+      .contact-content {
+        padding: 30px 24px;
+      }
+
+      .phone-box {
+        width: 100%;
+      }
+
+      .phone-box strong {
+        font-size: 20px;
+      }
+
+      .cta-strip {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cta-strip .btn {
+        width: 100%;
+      }
+
+      footer {
+        padding-bottom: 86px;
+      }
+
+      .mobile-call {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="Service Today Plumber Mona Vale home">
+        <div class="logo-icon">💧</div>
+        <div>
+          <span>Service Today Plumber</span>
+          <small>Mona Vale</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-phone" href="tel:+61488814101">Call +61 488 814 101</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge">Reliable Local Plumbing Support</div>
+          <h1>Professional Plumber in <span>Mona Vale</span></h1>
+          <p>
+            Service Today Plumber Mona Vale delivers dependable plumbing solutions for homes and businesses, from urgent repairs to everyday maintenance and installations.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+61488814101">Call Now: +61 488 814 101</a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Plumbing service highlights">
+          <div class="hero-card-top">
+            <div>
+              <h2>Fast, friendly and professional plumbing service.</h2>
+              <p>Ready to assist with leaks, blockages, hot water issues and more.</p>
+            </div>
+          </div>
+
+          <div class="quick-list">
+            <div class="quick-item">
+              <span class="check">✓</span>
+              <span>Residential and commercial plumbing</span>
+            </div>
+            <div class="quick-item">
+              <span class="check">✓</span>
+              <span>Clear communication and practical solutions</span>
+            </div>
+            <div class="quick-item">
+              <span class="check">✓</span>
+              <span>Servicing Mona Vale and nearby areas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Our Services</div>
+          <h2>Plumbing services tailored to your property</h2>
+          <p>
+            Whether it is a small repair or a larger plumbing concern, our team provides practical workmanship and responsive customer care.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🚰</div>
+            <h3>General Plumbing Repairs</h3>
+            <p>Assistance with leaking taps, running toilets, pipe repairs, water pressure concerns and everyday plumbing faults.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🌀</div>
+            <h3>Blocked Drains</h3>
+            <p>Help identifying and clearing blocked sinks, showers, toilets, stormwater drains and household drainage issues.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🔥</div>
+            <h3>Hot Water Systems</h3>
+            <p>Support for hot water faults, repairs, replacements and guidance on efficient hot water system options.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🚿</div>
+            <h3>Bathroom & Kitchen Plumbing</h3>
+            <p>Installation and repair of fixtures, mixers, sinks, showers, toilets, dishwashers and appliance connections.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🏠</div>
+            <h3>Leak Detection</h3>
+            <p>Professional investigation of visible and hidden leaks to help prevent water damage and unnecessary water usage.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Maintenance Plumbing</h3>
+            <p>Scheduled plumbing checks and preventative maintenance for homes, units, strata properties and businesses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <h3>Your trusted Mona Vale plumbing team</h3>
+          <p>Focused on dependable service, tidy workmanship and straightforward advice for every job.</p>
+        </div>
+
+        <div class="about-content">
+          <div class="eyebrow">About Us</div>
+          <h2>Local plumbing help when you need it</h2>
+          <p>
+            Service Today Plumber Mona Vale is committed to delivering professional plumbing support with a customer-first approach. We understand that plumbing problems can disrupt your day, so we focus on prompt communication, careful assessment and lasting solutions.
+          </p>
+          <p>
+            From routine maintenance to unexpected plumbing problems, we bring practical experience and attention to detail to every property we visit.
+          </p>
+
+          <div class="features">
+            <div class="feature">
+              <span class="check">✓</span>
+              <span>Prompt response</span>
+            </div>
+            <div class="feature">
+              <span class="check">✓</span>
+              <span>Professional service</span>
+            </div>
+            <div class="feature">
+              <span class="check">✓</span>
+              <span>Clean workmanship</span>
+            </div>
+            <div class="feature">
+              <span class="check">✓</span>
+              <span>Clear advice</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-content">
+          <div class="eyebrow">Contact Us</div>
+          <h2>Need a plumber in Mona Vale?</h2>
+          <p>
+            Call Service Today Plumber Mona Vale to discuss your plumbing issue and arrange service for your home or business.
+          </p>
+
+          <a class="phone-box" href="tel:+61488814101" aria-label="Call Service Today Plumber Mona Vale">
+            <span class="phone-icon">☎</span>
+            <span>
+              <small>Call us today</small>
+              <strong>+61 488 814 101</strong>
+            </span>
+          </a>
+
+          <ul class="contact-list">
+            <li><span class="check">✓</span><span>Service for residential and commercial properties</span></li>
+            <li><span class="check">✓</span><span>Friendly assistance for urgent and routine plumbing needs</span></li>
+            <li><span class="check">✓</span><span>Local service across Mona Vale and surrounding suburbs</span></li>
+          </ul>
+        </div>
+
+        <div class="contact-panel">
+          <h3>Book plumbing assistance</h3>
+          <p>
+            For the quickest response, phone our team directly. We will listen to your concern, provide guidance and help organise the next step.
+          </p>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <strong>Business</strong>
+              <span>Service Today Plumber Mona Vale</span>
+            </div>
+            <div class="info-card">
+              <strong>Phone</strong>
+              <span>+61 488 814 101</span>
+            </div>
+            <div class="info-card">
+              <strong>Location</strong>
+              <span>Mona Vale</span>
+            </div>
+            <div class="info-card">
+              <strong>Services</strong>
+              <span>Plumbing repairs, drains, leaks and hot water</span>
+            </div>
+          </div>
+
+          <div class="cta-strip">
+            <div>
+              <strong>Ready to get started?</strong>
+              <span>Speak with a plumbing professional today.</span>
+            </div>
+            <a class="btn btn-primary" href="tel:+61488814101">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Service Today Plumber Mona Vale</strong> &copy; 2026. Professional plumbing services in Mona Vale. Phone: +61 488 814 101</p>
+    </div>
+  </footer>
+
+  <a class="mobile-call" href="tel:+61488814101">Call +61 488 814 101</a>
+</body>
+</html>
