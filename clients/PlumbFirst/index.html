@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PlumbFirst provides professional plumbing services for homes and businesses. Call +61 2 8998 1752 for fast, reliable plumbing support." />
+  <title>PlumbFirst | Professional Plumbing Services</title>
+  <style>
+    :root {
+      --primary: #0b5ed7;
+      --primary-dark: #084298;
+      --secondary: #12b5cb;
+      --dark: #102033;
+      --text: #425466;
+      --light: #f5f9fc;
+      --white: #ffffff;
+      --border: #dbe7f0;
+      --shadow: 0 14px 40px rgba(16, 32, 51, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      color: var(--dark);
+      font-size: 1.45rem;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(11, 94, 215, 0.25);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 0.96rem;
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    nav a {
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .nav-phone {
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 8px 20px rgba(11, 94, 215, 0.22);
+    }
+
+    .nav-phone:hover {
+      color: var(--white);
+      background: var(--primary-dark);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(18, 181, 203, 0.23), transparent 35%),
+        linear-gradient(135deg, #eef7ff 0%, #ffffff 58%);
+      padding: 92px 0 80px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: auto -120px -180px auto;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(11, 94, 215, 0.08);
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(11, 94, 215, 0.09);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--secondary);
+    }
+
+    h1 {
+      color: var(--dark);
+      font-size: clamp(2.35rem, 5vw, 4.6rem);
+      line-height: 1.04;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 620px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 0 12px 24px rgba(11, 94, 215, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--dark);
+      border: 1px solid var(--border);
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 620px;
+    }
+
+    .trust-item {
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .hero-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      position: relative;
+    }
+
+    .hero-card-top {
+      min-height: 300px;
+      border-radius: 22px;
+      background:
+        linear-gradient(rgba(16, 32, 51, 0.16), rgba(16, 32, 51, 0.45)),
+        url("https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=80") center/cover;
+      display: flex;
+      align-items: flex-end;
+      padding: 24px;
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .hero-card-top h2 {
+      font-size: 1.55rem;
+      line-height: 1.2;
+      max-width: 320px;
+    }
+
+    .quick-contact {
+      margin-top: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-pill {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 15px;
+      border-radius: 16px;
+      background: var(--light);
+      border: 1px solid var(--border);
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: rgba(11, 94, 215, 0.1);
+      color: var(--primary);
+      flex: 0 0 auto;
+      font-weight: 900;
+    }
+
+    .contact-pill strong {
+      display: block;
+      color: var(--dark);
+      line-height: 1.3;
+    }
+
+    .section {
+      padding: 86px 0;
+    }
+
+    .section-light {
+      background: var(--light);
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 48px;
+    }
+
+    .section-heading span {
+      color: var(--primary);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.82rem;
+    }
+
+    h2 {
+      color: var(--dark);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -1px;
+      margin: 10px 0 14px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 10px 24px rgba(16, 32, 51, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-card .icon {
+      margin-bottom: 18px;
+    }
+
+    .service-card h3 {
+      color: var(--dark);
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-image {
+      border-radius: 28px;
+      min-height: 430px;
+      background:
+        linear-gradient(rgba(11, 94, 215, 0.08), rgba(16, 32, 51, 0.25)),
+        url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80") center/cover;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .experience-badge {
+      position: absolute;
+      left: 22px;
+      bottom: 22px;
+      background: var(--white);
+      border-radius: 18px;
+      padding: 18px 20px;
+      box-shadow: 0 10px 30px rgba(16, 32, 51, 0.18);
+      max-width: 240px;
+    }
+
+    .experience-badge strong {
+      display: block;
+      color: var(--primary);
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .experience-badge span {
+      color: var(--dark);
+      font-weight: 800;
+    }
+
+    .about-content h2 {
+      margin-top: 0;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin: 26px 0 32px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px;
+      background: var(--light);
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    .check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--secondary);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      font-size: 0.85rem;
+      font-weight: 900;
+    }
+
+    .contact-section {
+      background:
+        radial-gradient(circle at top left, rgba(18, 181, 203, 0.18), transparent 30%),
+        linear-gradient(135deg, var(--dark), #123a6b);
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .contact-section h2,
+    .contact-section h3 {
+      color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .contact-info,
+    .contact-form {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 24px;
+      padding: 30px;
+      backdrop-filter: blur(10px);
+    }
+
+    .contact-info p {
+      margin: 14px 0 24px;
+    }
+
+    .contact-method {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 18px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .contact-method:first-of-type {
+      border-top: none;
+    }
+
+    .contact-method .icon {
+      background: rgba(255, 255, 255, 0.14);
+      color: var(--white);
+    }
+
+    .contact-method strong {
+      display: block;
+      color: var(--white);
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    label {
+      display: block;
+      color: var(--white);
+      font-weight: 700;
+      margin-bottom: 7px;
+      font-size: 0.94rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 14px;
+      padding: 14px 15px;
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--dark);
+      font: inherit;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 4px rgba(18, 181, 203, 0.18);
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .submit-note {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    footer {
+      background: #081421;
+      color: rgba(255, 255, 255, 0.72);
+      padding: 26px 0;
+      text-align: center;
+      font-size: 0.94rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 920px) {
+      nav ul {
+        gap: 16px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 70px 0 64px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-image {
+        min-height: 360px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .navbar {
+        min-height: auto;
+        padding: 16px 0;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      .logo {
+        font-size: 1.3rem;
+      }
+
+      .hero {
+        padding: 54px 0 56px;
+      }
+
+      .hero p {
+        font-size: 1.04rem;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .trust-row,
+      .services-grid,
+      .features,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        padding: 18px;
+        border-radius: 22px;
+      }
+
+      .hero-card-top {
+        min-height: 240px;
+      }
+
+      .section {
+        padding: 64px 0;
+      }
+
+      .section-heading {
+        margin-bottom: 34px;
+      }
+
+      .service-card,
+      .contact-info,
+      .contact-form {
+        padding: 22px;
+      }
+
+      .about-image {
+        min-height: 300px;
+        border-radius: 22px;
+      }
+
+      .experience-badge {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="logo" aria-label="PlumbFirst home">
+        <span class="logo-mark">P</span>
+        <span>PlumbFirst</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav-phone" href="tel:+61289981752">+61 2 8998 1752</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">Reliable Local Plumbing Services</div>
+          <h1>Professional plumbers when you need us most.</h1>
+          <p>
+            PlumbFirst delivers dependable plumbing solutions for homes and businesses, from urgent repairs to planned installations and ongoing maintenance.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+61289981752">Call +61 2 8998 1752</a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">Fast Response</div>
+            <div class="trust-item">Licensed Professionals</div>
+            <div class="trust-item">Quality Workmanship</div>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Plumbing service highlight">
+          <div class="hero-card-top">
+            <h2>Clean, efficient plumbing work done right the first time.</h2>
+          </div>
+
+          <div class="quick-contact">
+            <div class="contact-pill">
+              <span class="icon">☎</span>
+              <div>
+                <strong>Speak with a plumber</strong>
+                <a href="tel:+61289981752">+61 2 8998 1752</a>
+              </div>
+            </div>
+
+            <div class="contact-pill">
+              <span class="icon">✓</span>
+              <div>
+                <strong>Residential & Commercial</strong>
+                <span>Repairs, installs and maintenance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span>Our Services</span>
+          <h2>Complete plumbing support for every property.</h2>
+          <p>
+            Whether it is a leaking tap, blocked drain or a full plumbing installation, PlumbFirst provides practical, lasting solutions.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="icon">🔧</span>
+            <h3>General Plumbing</h3>
+            <p>Professional repairs, replacements and maintenance for taps, toilets, pipes, fixtures and everyday plumbing issues.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="icon">💧</span>
+            <h3>Leak Detection & Repairs</h3>
+            <p>Prompt investigation and repair of leaks to help prevent water damage, wasted water and costly future problems.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="icon">🚿</span>
+            <h3>Blocked Drains</h3>
+            <p>Effective drain clearing and troubleshooting for sinks, showers, toilets, stormwater drains and sewer lines.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="icon">🔥</span>
+            <h3>Hot Water Systems</h3>
+            <p>Installation, servicing and repairs for hot water units to keep your home or business running comfortably.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="icon">🏠</span>
+            <h3>Renovation Plumbing</h3>
+            <p>Reliable plumbing work for bathroom, kitchen and laundry renovations, upgrades and new fixture installations.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="icon">🚨</span>
+            <h3>Emergency Plumbing</h3>
+            <p>Responsive assistance for urgent plumbing problems that require fast attention and dependable workmanship.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <div class="experience-badge">
+            <strong>First</strong>
+            <span>for dependable plumbing service</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-heading" style="text-align:left; margin:0 0 18px;">
+            <span>About PlumbFirst</span>
+            <h2>Your trusted plumbing team.</h2>
+          </div>
+
+          <p>
+            PlumbFirst is built on simple values: clear communication, professional service and plumbing work completed to a high standard. We help homeowners, property managers and businesses resolve plumbing issues quickly and confidently.
+          </p>
+          <p style="margin-top:14px;">
+            From routine maintenance to urgent repairs, our approach is practical, respectful and focused on delivering reliable results with minimal disruption.
+          </p>
+
+          <div class="features">
+            <div class="feature"><span class="check">✓</span><span>Honest advice and clear communication</span></div>
+            <div class="feature"><span class="check">✓</span><span>Neat, respectful service on every job</span></div>
+            <div class="feature"><span class="check">✓</span><span>Solutions for homes and businesses</span></div>
+            <div class="feature"><span class="check">✓</span><span>Quality materials and workmanship</span></div>
+          </div>
+
+          <a class="btn btn-primary" href="tel:+61289981752">Call PlumbFirst Today</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span>Contact Us</span>
+          <h2>Need a plumber? Get in touch today.</h2>
+          <p>
+            Call PlumbFirst for friendly advice, booking enquiries and professional plumbing assistance.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact Details</h3>
+            <p>
+              For plumbing repairs, maintenance, installations or urgent assistance, contact our team using the details below.
+            </p>
+
+            <div class="contact-method">
+              <span class="icon">☎</span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+61289981752">+61 2 8998 1752</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <span class="icon">⏱</span>
+              <div>
+                <strong>Service Enquiries</strong>
+                <span>Call to discuss availability and booking times</span>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <span class="icon">📍</span>
+              <div>
+                <strong>Service Area</strong>
+                <span>Local residential and commercial plumbing services</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Request a Call Back</h3>
+            <p style="margin:10px 0 20px;">Submit your details and we will follow up as soon as possible.</p>
+
+            <form action="mailto:info@plumbfirst.com" method="post" enctype="text/plain">
+              <div class="form-row">
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="Name" placeholder="Your name" required />
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="Phone" placeholder="+61" required />
+                </div>
+              </div>
+
+              <div>
+                <label for="service">Service Needed</label>
+                <input type="text" id="service" name="Service Needed" placeholder="e.g. blocked drain, leak repair" />
+              </div>
+
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="Message" placeholder="Tell us about your plumbing issue"></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send Enquiry</button>
+              <div class="submit-note">For urgent plumbing help, please call <a href="tel:+61289981752">+61 2 8998 1752</a>.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 <strong>PlumbFirst</strong>. Professional plumbing services. Phone: <a href="tel:+61289981752">+61 2 8998 1752</a></p>
+    </div>
+  </footer>
+</body>
+</html>
