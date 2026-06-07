@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plumber | Blast It Plumbing</title>
+<meta name="description" content="Blast It Plumbing — trusted Plumber. Call +61 1300 987 082 for a free quote.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Plumber | Blast It Plumbing">
+<meta property="og:description" content="Blast It Plumbing — trusted Plumber. Call +61 1300 987 082 for a free quote.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://blastitplumbing.com.au/">
+<meta property="og:locale" content="en_AU">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Blast It Plumbing",
+  "description": "Blast It Plumbing — trusted Plumber. Call +61 1300 987 082 for a free quote.",
+  "telephone": "+611300987082",
+  "url": "http://blastitplumbing.com.au/",
+  "priceRange": "$$",
+  "openingHours": "Mo-Su 07:00-18:00",
+  "sameAs": [],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Plumbing Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Plumbing"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Blocked Drains"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hot Water Systems"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Leak Detection & Repair"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas Fitting"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bathroom Renovations"}}
+    ]
+  }
+}
+</script>
+<style>
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --accent: #1A6BFF;
+  --accent-dark: #1355CC;
+  --accent-glow: rgba(26, 107, 255, 0.3);
+  --accent-subtle: rgba(26, 107, 255, 0.08);
+  --accent-border: rgba(26, 107, 255, 0.15);
+  --gray-50: #FAFAFA;
+  --gray-100: #F5F5F5;
+  --gray-200: #E5E5E5;
+  --gray-300: #D4D4D4;
+  --gray-400: #A3A3A3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
+  --gray-900: #171717;
+  --gray-950: #0A0A0A;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-med: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== STICKY HEADER ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 16px 0;
+  transition: all var(--transition-med);
+  background: transparent;
+}
+
+.header.scrolled {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 10px 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.nav-links {
+  display: none;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-400);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--white);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width var(--transition-fast);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.header-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: var(--white);
+  background: var(--accent);
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.header-phone::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: var(--radius-full);
+  background: var(--accent);
+  opacity: 0;
+  animation: pulse-ring 2s infinite;
+  z-index: -1;
+}
+
+@keyframes pulse-ring {
+  0% { opacity: 0.6; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.3); }
+}
+
+.header-phone:hover {
+  background: var(--accent-dark);
+  transform: scale(1.05);
+}
+
+.header-phone svg {
+  width: 16px;
+  height: 16px;
+  animation: phone-shake 3s infinite;
+}
+
+@keyframes phone-shake {
+  0%, 100% { transform: rotate(0); }
+  5% { transform: rotate(15deg); }
+  10% { transform: rotate(-10deg); }
+  15% { transform: rotate(10deg); }
+  20% { transform: rotate(0); }
+}
+
+.mobile-menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.mobile-menu-btn span {
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.97);
+  backdrop-filter: blur(20px);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-med);
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-menu a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  transition: color var(--transition-fast);
+}
+
+.mobile-menu a:hover {
+  color: var(--accent);
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 20px 80px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% 0%, var(--accent-glow) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(26, 107, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(26, 107, 255, 0.05) 0%, transparent 50%);
+}
+
+.hero-grid-lines {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hero-badge-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: dot-pulse 2s infinite;
+}
+
+@keyframes dot-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+}
+
+.hero h1 .accent {
+  background: linear-gradient(135deg, var(--accent), #4D94FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  color: var(--gray-400);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--accent);
+  color: var(--white);
+  font-weight: 700;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  padding: 18px 40px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(255,255,255,0.15));
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 48px rgba(26, 107, 255, 0.35);
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--white);
+  font-weight: 600;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  padding: 16px 36px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.hero-trust {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(8px);
+}
+
+.trust-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.trust-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.trust-text span {
+  display: block;
+  color: var(--gray-500);
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: clamp(60px, 12vw, 120px) 0;
+  position: relative;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.section-label::before {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: var(--gray-400);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+}
+
+/* ===== SERVICES ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  transition: all var(--transition-med);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  group: true;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-med);
+}
+
+.service-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--accent-border);
+  transform: translateY(-4px);
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  transition: all var(--transition-med);
+}
+
+.service-card:hover .service-icon {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.service-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+}
+
+.service-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all var(--transition-fast);
+}
+
+.service-card:hover .service-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===== ABOUT ===== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+.about-story {
+  order: 2;
+}
+
+.about-story p {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  color: var(--gray-300);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 24px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+}
+
+.stat-number {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.about-image {
+  order: 1;
+  position: relative;
+}
+
+.about-image-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, var(--gray-900), var(--gray-800));
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-image-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--accent-subtle), transparent);
+}
+
+.about-image-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px;
+}
+
+.about-image-inner .big-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+.about-image-inner p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.about-image-inner span {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+.why-choose {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.why-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+}
+
+.why-check {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background: rgba(34, 197, 94, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22C55E;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.why-item h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.why-item p {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  line-height: 1.5;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  transition: all var(--transition-med);
+  position: relative;
+}
+
+.testimonial-card:hover {
+  border-color: var(--accent-border);
+  transform: translateY(-2px);
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.star {
+  color: #FBBF24;
+  font-size: 16px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: var(--gray-200);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.testimonial-location {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+.testimonial-badge {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  color: #22C55E;
+  font-weight: 600;
+}
+
+/* ===== SERVICE AREAS ===== */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.area-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.area-card:hover {
+  border-color: var(--accent-border);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.area-pin {
+  font-size: 20px;
+}
+
+.area-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.area-card.primary {
+  background: var(--accent-subtle);
+  border-color: var(--accent-border);
+  grid-column: span 2;
+}
+
+.area-card.primary .area-name {
+  color: var(--accent);
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 800px;
+  margin: 48px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-fast);
+}
+
+.faq-item:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.faq-icon {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: transform var(--transition-fast);
+  color: var(--gray-400);
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+  color: var(--accent);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-med);
+}
+
+.faq-answer-inner {
+  padding: 0 24px 20px;
+  font-size: 0.9rem;
+  color: var(--gray-400);
+  line-height: 1.7;
+}
+
+/* ===== AEO SECTION ===== */
+.aeo-section {
+  background: rgba(255, 255, 255, 0.01);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.aeo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.aeo-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.aeo-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.aeo-card h3::before {
+  content: '?';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-top: 1px;
+}
+
+.aeo-card p {
+  font-size: 0.88rem;
+  color: var(--gray-400);
+  line-height: 1.7;
+  padding-left: 34px;
+}
+
+/* ===== CONTACT ===== */
+.contact-section {
+  position: relative;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.contact-method:hover {
+  border-color: var(--accent-border);
+}
+
+.contact-method-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.contact-method h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.contact-method p {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.contact-method a {
+  color: var(--accent);
+  transition: color var(--transition-fast);
+}
+
+.contact-method a:hover {
+  color: var(--white);
+}
+
+.contact-form-wrapper {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+}
+
+.contact-form-wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.contact-form-wrapper .form-sub {
+  font-size: 0.9rem;
+  color: var(--gray-400);
+  margin-bottom: 28px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="tel"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--white);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: var(--gray-600);
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: var(--accent);
+  background: rgba(26, 107, 255, 0.05);
+  box-shadow: 0 0 0 3px rgba(26, 107, 255, 0.1);
+}
+
+#contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#contact-form button[type="submit"] {
+  width: 100%;
+  padding: 18px;
+  background: var(--accent);
+  color: var(--white);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+#contact-form button[type="submit"]:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(26, 107, 255, 0.3);
+}
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.form-success.show {
+  display: block;
+}
+
+.form-success .success-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.form-success h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.form-success p {
+  color: var(--gray-400);
+  font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 48px 0 120px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-inner {
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footer-logo span {
+  color: var(--accent);
+}
+
+.footer-text {
+  color: var(--gray-500);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--gray-500);
+  font-size: 0.85rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.footer-credit {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 0.75rem;
+  color: var(--gray-700);
+}
+
+.footer-credit a {
+  color: var(--gray-500);
+  transition: color var(--transition-fast);
+}
+
+.footer-credit a:hover {
+  color: var(--accent);
+}
+
+/* ===== FLOATING CALL BUTTON ===== */
+.floating-call {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--accent);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 16px 24px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 8px 32px rgba(26, 107, 255, 0.4);
+  transition: all var(--transition-fast);
+  animation: float-bounce 3s infinite ease-in-out;
+}
+
+.floating-call::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: var(--radius-full);
+  background: var(--accent);
+  opacity: 0;
+  z-index: -1;
+  animation: pulse-ring 2s infinite;
+}
+
+.floating-call:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 48px rgba(26, 107, 255, 0.5);
+}
+
+@keyframes float-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.floating-call svg {
+  width: 20px;
+  height: 20px;
+}
+
+.floating-call .call-text {
+  display: none;
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.animate-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-in.delay-1 { transition-delay: 0.1s; }
+.animate-in.delay-2 { transition-delay: 0.2s; }
+.animate-in.delay-3 { transition-delay: 0.3s; }
+.animate-in.delay-4 { transition-delay: 0.4s; }
+.animate-in.delay-5 { transition-delay: 0.5s; }
+.animate-in.delay-6 { transition-delay: 0.6s; }
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 480px) {
+  .floating-call .call-text {
+    display: inline;
+  }
+  
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .areas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .area-card.primary {
+    grid-column: span 3;
+  }
+  
+  .aeo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  
+  .hero-trust {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  
+  .about-story {
+    order: 1;
+  }
+  
+  .about-image {
+    order: 2;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    display: flex;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .areas-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .area-card.primary {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">🔧</div>
+        Blast It <span>Plumbing</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#areas">Areas</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="tel:+611300987082" class="header-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          1300 987 082
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#services" class="mobile-nav-link">Services</a>
+  <a href="#about" class="mobile-nav-link">About</a>
+  <a href="#testimonials" class="mobile-nav-link">Reviews</a>
+  <a href="#areas" class="mobile-nav-link">Areas</a>
+  <a href="#faq" class="mobile-nav-link">FAQ</a>
+  <a href="#contact" class="mobile-nav-link">Contact</a>
+  <a href="tel:+611300987082" class="btn-primary" style="margin-top: 16px;">
+    📞 Call 1300 987 082
+  </a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-grid-lines"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge animate-in">
+      <span class="hero-badge-dot"></span>
+      Licensed & Trusted Plumber
+    </div>
+    <h1 class="animate-in delay-1">
+      Your Local<br><span class="accent">Plumbing Experts</span>
+    </h1>
+    <p class="hero-sub animate-in delay-2">
+      Fast, reliable plumbing solutions for homes and businesses across Australia. Available 24/7 for emergencies — no call‑out fees.
+    </p>
+    <div class="hero-buttons animate-in delay-3">
+      <a href="tel:+611300987082" class="btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Call 1300 987 082
+      </a>
+      <a href="#contact" class="btn-secondary">
+        Get a Free Quote →
+      </a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item animate-in delay-3">
+        <div class="trust-icon">🏆</div>
+        <div class="trust-text">15+ Years<span>Industry Experience</span></div>
+      </div>
+      <div class="trust-item animate-in delay-4">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-text">Licensed<span>Fully Insured</span></div>
+      </div>
+      <div class="trust-item animate-in delay-5">
+        <div class="trust-icon">⚡</div>
+        <div class="trust-text">60 Min<span>Response Time</span></div>
+      </div>
+      <div class="trust-item animate-in delay-6">
+        <div class="trust-icon">📍</div>
+        <div class="trust-text">Local<span>Australian Owned</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="animate-in">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Professional Plumbing<br>Services</h2>
+      <p class="section-subtitle">From emergency repairs to full bathroom renovations — we handle every plumbing job with precision and care.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card animate-in delay-1">
+        <div class="service-icon">🚨</div>
+        <h3>Emergency Plumbing</h3>
+        <p>24/7 emergency plumbing services for burst pipes, major leaks, gas emergencies and blocked drains. We're there when you need us most.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+      <div class="service-card animate-in delay-2">
+        <div class="service-icon">🚿</div>
+        <h3>Blocked Drains</h3>
+        <p>Advanced CCTV drain inspection and high-pressure water jetting to clear even the toughest blockages quickly and effectively.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+      <div class="service-card animate-in delay-3">
+        <div class="service-icon">🔥</div>
+        <h3>Hot Water Systems</h3>
+        <p>Installation, repair and replacement of all hot water systems including electric, gas, solar and heat pump units.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+      <div class="service-card animate-in delay-4">
+        <div class="service-icon">💧</div>
+        <h3>Leak Detection & Repair</h3>
+        <p>Non-invasive leak detection technology to find hidden leaks fast. We repair pipes, taps and fixtures with minimal disruption.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+      <div class="service-card animate-in delay-1">
+        <div class="service-icon">🔩</div>
+        <h3>Gas Fitting</h3>
+        <p>Licensed gas fitting services including gas line installation, appliance connections, leak testing and compliance certificates.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+      <div class="service-card animate-in delay-2">
+        <div class="service-icon">🛁</div>
+        <h3>Bathroom Renovations</h3>
+        <p>Complete bathroom renovation services from design through to completion. Modern fixtures, quality workmanship, stunning results.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+      <div class="service-card animate-in delay-3">
+        <div class="service-icon">🏠</div>
+        <h3>General Plumbing</h3>
+        <p>Tap repairs, toilet fixes, pipe replacements, water pressure issues and all general maintenance plumbing for your home or business.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+      <div class="service-card animate-in delay-4">
+        <div class="service-icon">🌧️</div>
+        <h3>Roof & Stormwater</h3>
+        <p>Roof plumbing, guttering, downpipes and stormwater drainage solutions to protect your property from water damage.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-story">
+        <div class="animate-in">
+          <div class="section-label">About Us</div>
+          <h2 class="section-title">Built on Trust,<br>Driven by Results</h2>
+        </div>
+        <div class="animate-in delay-1">
+          <p>Blast It Plumbing was founded with a simple mission: deliver honest, reliable plumbing services that Australians can count on. What started as a one-man operation has grown into a trusted team of licensed professionals serving homes and businesses across the region.</p>
+          <p>We believe in doing the job right the first time — no shortcuts, no surprises, just quality workmanship backed by genuine customer care. Every plumber on our team is fully licensed, insured and committed to leaving your property better than we found it.</p>
+        </div>
+        <div class="about-stats animate-in delay-2">
+          <div class="stat-card">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5K+</div>
+            <div class="stat-label">Jobs Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4.9</div>
+            <div class="stat-label">Star Rating</div>
+          </div>
+        </div>
+        <div class="why-choose animate-in delay-3">
+          <div class="why-item">
+            <div class="why-check">✓</div>
+            <div>
+              <h4>Upfront Pricing</h4>
+              <p>No hidden fees or surprise charges. We quote before we start so you know exactly what to expect.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-check">✓</div>
+            <div>
+              <h4>Guaranteed Workmanship</h4>
+              <p>Every job comes with our satisfaction guarantee. If it's not right, we'll come back and fix it — free of charge.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-check">✓</div>
+            <div>
+              <h4>Same Day Service</h4>
+              <p>We know plumbing issues can't wait. That's why we offer same-day service for most jobs, with 24/7 emergency availability.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-check">✓</div>
+            <div>
+              <h4>Clean & Respectful</h4>
+              <p>We treat your property like our own — shoe covers, drop sheets and a thorough clean-up after every job.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-image animate-in delay-2">
+        <div class="about-image-placeholder">
+          <div class="about-image-inner">
+            <div class="big-icon">🔧</div>
+            <p>Blast It Plumbing</p>
+            <span>Licensed & Insured Plumber</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="animate-in" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">Customer Reviews</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle" style="margin:0 auto;">Don't just take our word for it — here's what real Australians say about our plumbing services.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate-in delay-1">
+        <div class="testimonial-badge">✓ Verified</div>
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Had a burst pipe at 11pm on a Saturday night. Called Blast It Plumbing and they were at our door within 45 minutes. Absolutely brilliant service — professional, quick and reasonably priced. Couldn't recommend them more highly!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MR</div>
+          <div>
+            <div class="testimonial-name">Mark Richardson</div>
+            <div class="testimonial-location">Local Homeowner</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-in delay-2">
+        <div class="testimonial-badge">✓ Verified</div>
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"The team at Blast It Plumbing did an amazing job on our bathroom renovation. They were punctual, tidy, and the finished result exceeded our expectations. Their attention to detail is second to none. We'll definitely be using them again."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SC</div>
+          <div>
+            <div class="testimonial-name">Sarah Collins</div>
+            <div class="testimonial-location">Local Resident</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-in delay-3">
+        <div class="testimonial-badge">✓ Verified</div>
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial
