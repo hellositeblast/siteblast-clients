@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plumber | All Clear Maintenance Plumbing</title>
+<meta name="description" content="All Clear Maintenance Plumbing — trusted Plumber. Call +61 1800 425 525 for a free quote.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Plumber | All Clear Maintenance Plumbing">
+<meta property="og:description" content="All Clear Maintenance Plumbing — trusted Plumber. Call +61 1800 425 525 for a free quote.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.allclearmaintenanceplumbing.com.au/">
+<meta property="og:locale" content="en_AU">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "All Clear Maintenance Plumbing",
+  "description": "Professional plumbing services. Licensed and insured plumber providing maintenance, repairs and installations.",
+  "telephone": "+611800425525",
+  "url": "http://www.allclearmaintenanceplumbing.com.au/",
+  "priceRange": "$$",
+  "serviceType": "Plumber",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Australia"
+  },
+  "sameAs": []
+}
+</script>
+<style>
+:root {
+  --primary: #1A6BFF;
+  --primary-dark: #1255CC;
+  --primary-light: rgba(26, 107, 255, 0.15);
+  --primary-glow: rgba(26, 107, 255, 0.4);
+  --bg: #000000;
+  --bg-card: #0A0A0A;
+  --bg-card-hover: #111111;
+  --bg-elevated: #0D0D0D;
+  --text: #FFFFFF;
+  --text-secondary: #A0A0A0;
+  --text-muted: #666666;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  --gradient-primary: linear-gradient(135deg, #1A6BFF 0%, #0044CC 100%);
+  --gradient-hero: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-lg: 24px;
+  --shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 40px rgba(26, 107, 255, 0.2);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography */
+h1 {
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+p {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Section Styles */
+.section {
+  padding: clamp(60px, 10vw, 120px) 0;
+  position: relative;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--primary);
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  background: var(--primary-light);
+  border-radius: 100px;
+  border: 1px solid rgba(26, 107, 255, 0.2);
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.section-header-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sticky Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 16px 0;
+  transition: var(--transition);
+  background: transparent;
+}
+
+.header.scrolled {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.nav {
+  display: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav a:hover {
+  color: var(--text);
+}
+
+.header-cta {
+  display: none;
+}
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.header-phone:hover {
+  color: var(--text);
+}
+
+.mobile-menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.97);
+  backdrop-filter: blur(20px);
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+.mobile-nav a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.mobile-nav a:hover {
+  color: var(--text);
+}
+
+.mobile-nav-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 80px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 20%, rgba(26, 107, 255, 0.12) 0%, transparent 70%);
+  z-index: 1;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 40% at 20% 80%, rgba(26, 107, 255, 0.06) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.hero-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 0%, transparent 70%);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  animation: orbFloat 8s ease-in-out infinite;
+}
+
+.hero-orb-1 {
+  width: 400px;
+  height: 400px;
+  background: var(--primary);
+  top: -100px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.hero-orb-2 {
+  width: 300px;
+  height: 300px;
+  background: #0044CC;
+  bottom: -50px;
+  left: -100px;
+  animation-delay: -4s;
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--primary-light);
+  border: 1px solid rgba(26, 107, 255, 0.25);
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 28px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #22C55E;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+.hero h1 {
+  animation: fadeInUp 0.8s ease-out 0.1s both;
+  margin-bottom: 24px;
+}
+
+.hero h1 .gradient-text {
+  background: linear-gradient(135deg, var(--primary) 0%, #60A5FA 50%, var(--primary) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.hero-description {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin: 0 auto 40px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: 0 4px 25px rgba(26, 107, 255, 0.3);
+  width: 100%;
+  max-width: 340px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px rgba(26, 107, 255, 0.45);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  border: 1px solid var(--border);
+  width: 100%;
+  max-width: 340px;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.hero-phone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.hero-phone-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-light);
+  border: 1px solid rgba(26, 107, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  animation: pulse-ring 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(26, 107, 255, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(26, 107, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(26, 107, 255, 0); }
+}
+
+.hero-phone a {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.hero-phone span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Trust Badges */
+.trust-bar {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.trust-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--primary-light);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.trust-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-text strong {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.trust-text span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Services Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--primary-light);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+  background: var(--gradient-primary);
+  transform: scale(1.05);
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* About Section */
+.about-section {
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+.about-content {
+  order: 2;
+}
+
+.about-visual {
+  order: 1;
+}
+
+.about-image-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, var(--primary-light) 0%, rgba(26, 107, 255, 0.05) 100%);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px;
+  text-align: center;
+}
+
+.about-image-placeholder .icon-large {
+  font-size: 4rem;
+  opacity: 0.6;
+}
+
+.about-image-placeholder span {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.about-content h2 {
+  margin-bottom: 20px;
+}
+
+.about-story {
+  margin-bottom: 32px;
+}
+
+.about-story p {
+  margin-bottom: 16px;
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.why-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.why-check {
+  width: 28px;
+  height: 28px;
+  background: var(--primary-light);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.why-item-text strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.why-item-text span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Testimonials */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  transition: var(--transition);
+  position: relative;
+}
+
+.testimonial-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 16px;
+  color: #FBBF24;
+  font-size: 1.1rem;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.testimonial-info strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.testimonial-info span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Service Areas */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.area-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.area-card:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+.area-pin {
+  color: var(--primary);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.area-card span {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* FAQ Section */
+.faq-section {
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-item:hover {
+  border-color: var(--border-hover);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: var(--transition);
+}
+
+.faq-question:hover {
+  color: var(--primary);
+}
+
+.faq-toggle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  transition: var(--transition);
+  flex-shrink: 0;
+  color: var(--primary);
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer-inner {
+  padding: 0 24px 20px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* AEO Section */
+.aeo-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.aeo-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.aeo-question {
+  width: 100%;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.aeo-question:hover {
+  color: var(--primary);
+}
+
+.aeo-toggle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  transition: var(--transition);
+  flex-shrink: 0;
+  color: var(--primary);
+}
+
+.aeo-item.active .aeo-toggle {
+  transform: rotate(45deg);
+}
+
+.aeo-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.aeo-answer-inner {
+  padding: 0 24px 20px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Contact Section */
+.contact-section {
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-info h2 {
+  margin-bottom: 8px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.contact-method:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+.contact-method-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-light);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.contact-method-text strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.contact-method-text span {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.contact-form-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+}
+
+.contact-form-wrapper h3 {
+  margin-bottom: 24px;
+  font-size: 1.3rem;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 16px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 0.95rem;
+  transition: var(--transition);
+  outline: none;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: var(--text-muted);
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(26, 107, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+#contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+#contact-form button[type="submit"] {
+  padding: 18px 32px;
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 25px rgba(26, 107, 255, 0.3);
+}
+
+#contact-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px rgba(26, 107, 255, 0.45);
+}
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.form-success.show {
+  display: block;
+}
+
+.form-success .success-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.form-success h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.form-success p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Footer */
+.footer {
+  padding: 40px 0 100px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+/* Floating Call Button */
+.floating-call {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 998;
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  box-shadow: 0 4px 30px rgba(26, 107, 255, 0.4);
+  animation: pulse-ring 2s ease-in-out infinite;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.floating-call:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 40px rgba(26, 107, 255, 0.6);
+}
+
+/* Scroll Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-delay-1 { transition-delay: 0.1s; }
+.animate-delay-2 { transition-delay: 0.2s; }
+.animate-delay-3 { transition-delay: 0.3s; }
+.animate-delay-4 { transition-delay: 0.4s; }
+.animate-delay-5 { transition-delay: 0.5s; }
+.animate-delay-6 { transition-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .trust-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .areas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: auto;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .areas-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-form-wrapper {
+    padding: 40px 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: flex;
+  }
+
+  .header-cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .about-content {
+    order: 1;
+  }
+
+  .about-visual {
+    order: 2;
+  }
+
+  .footer {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">🔧</div>
+        <span>All Clear Maintenance</span>
+      </a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#areas">Areas</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="tel:+611800425525" class="header-phone">
+          📞 1800 425 525
+        </a>
+        <a href="#contact" class="btn btn-primary" style="padding: 12px 24px; font-size: 0.9rem;">Get Free Quote</a>
+      </div>
+      <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="toggleMobileNav()" aria-label="Close menu">✕</button>
+  <a href="#services" onclick="toggleMobileNav()">Services</a>
+  <a href="#about" onclick="toggleMobileNav()">About</a>
+  <a href="#reviews" onclick="toggleMobileNav()">Reviews</a>
+  <a href="#areas" onclick="toggleMobileNav()">Areas</a>
+  <a href="#faq" onclick="toggleMobileNav()">FAQ</a>
+  <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+  <a href="tel:+611800425525" class="btn btn-primary" style="margin-top: 16px;">📞 Call 1800 425 525</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Available 24/7 — Licensed & Insured Plumber
+      </div>
+      <h1>Professional<br><span class="gradient-text">Plumbing Services</span><br>You Can Trust</h1>
+      <p class="hero-description">All Clear Maintenance Plumbing delivers expert plumbing repairs, installations and maintenance across Australia. Fast response. Fair pricing. Guaranteed workmanship.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          ✉️ Get a Free Quote
+        </a>
+        <a href="tel:+611800425525" class="btn btn-secondary">
+          📞 Call Now — 1800 425 525
+        </a>
+      </div>
+      <div class="hero-phone">
+        <div class="hero-phone-icon">📞</div>
+        <div>
+          <a href="tel:+611800425525">1800 425 525</a><br>
+          <span>Free call — Available 24/7</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item animate-on-scroll">
+        <div class="trust-icon">🏆</div>
+        <div class="trust-text">
+          <strong>15+ Years</strong>
+          <span>Industry Experience</span>
+        </div>
+      </div>
+      <div class="trust-item animate-on-scroll animate-delay-1">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-text">
+          <strong>Licensed & Insured</strong>
+          <span>Fully Qualified</span>
+        </div>
+      </div>
+      <div class="trust-item animate-on-scroll animate-delay-2">
+        <div class="trust-icon">⚡</div>
+        <div class="trust-text">
+          <strong>Fast Response</strong>
+          <span>Same Day Service</span>
+        </div>
+      </div>
+      <div class="trust-item animate-on-scroll animate-delay-3">
+        <div class="trust-icon">⭐</div>
+        <div class="trust-text">
+          <strong>5-Star Rated</strong>
+          <span>100+ Happy Clients</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header-center">
+      <div class="section-label animate-on-scroll">🔧 Our Services</div>
+      <h2 class="section-title animate-on-scroll">Expert Plumbing Services<br>For Every Need</h2>
+      <p class="section-subtitle animate-on-scroll">From burst pipes to bathroom renovations, All Clear Maintenance Plumbing has you covered with professional, reliable solutions.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card animate-on-scroll">
+        <div class="service-icon">🚿</div>
+        <h3>Blocked Drains</h3>
+        <p>Fast clearing of blocked drains, toilets and sewer lines using high-pressure water jetting and CCTV camera inspections.</p>
+      </div>
+      <div class="service-card animate-on-scroll animate-delay-1">
+        <div class="service-icon">🔧</div>
+        <h3>Leak Detection & Repair</h3>
+        <p>Expert leak detection and repair for pipes, taps, toilets and hidden leaks. Stop water damage before it gets worse.</p>
+      </div>
+      <div class="service-card animate-on-scroll animate-delay-2">
+        <div class="service-icon">🚰</div>
+        <h3>Hot Water Systems</h3>
+        <p>Installation, repair and replacement of all hot water systems including gas, electric, solar and heat pump units.</p>
+      </div>
+      <div class="service-card animate-on-scroll animate-delay-3">
+        <div class="service-icon">🏠</div>
+        <h3>Bathroom Renovations</h3>
+        <p>Complete bathroom plumbing for renovations. Relocations, new fixtures, waterproofing and compliance certifications.</p>
+      </div>
+      <div class="service-card animate-on-scroll animate-delay-4">
+        <div class="service-icon">🚽</div>
+        <h3>Toilet Repairs</h3>
+        <p>Toilet installation, repairs, replacements and cistern fixes. We handle running toilets, leaks and blockages quickly.</p>
+      </div>
+      <div class="service-card animate-on-scroll animate-delay-5">
+        <div class="service-icon">⚡</div>
+        <h3>Emergency Plumbing</h3>
+        <p>24/7 emergency plumber on call for burst pipes, major leaks, overflowing drains and gas emergencies. Fast response guaranteed.</p>
+      </div>
+      <div class="service-card animate-on-scroll animate-delay-6">
+        <div class="service-icon">🔥</div>
+        <h3>Gas Fitting</h3>
+        <p>Licensed gas fitting for cooktops, heaters, BBQs and gas line installations. Safety checks and compliance certificates.</p>
+      </div>
+      <div class="service-card animate-on-scroll">
+        <div class="service-icon">🏢</div>
+        <h3>Commercial Plumbing</h3>
+        <p>Reliable commercial plumbing for offices, shops, restaurants and strata properties. Maintenance contracts available.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- About Section -->
+<section class="section about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        <div class="section-label animate-on-scroll">👤 About Us</div>
+        <h2 class="section-title animate-on-scroll">Trusted Plumbers<br>Built on Reputation</h2>
+        <div class="about-story animate-on-scroll">
+          <p>All Clear Maintenance Plumbing was founded with a simple mission — to deliver honest, high-quality plumbing services that Australians can rely on. With over 15 years in the trade, our team has built a reputation for excellence, integrity and getting the job done right the first time.</p>
+          <p>We understand that plumbing problems don't wait for business hours. That's why we offer fast-response emergency services alongside our comprehensive maintenance and installation work. Every job, big or small, receives the same professional attention.</p>
+        </div>
+        <div class="why-choose-grid">
+          <div class="why-item animate-on-scroll">
+            <div class="why-check">✓</div>
+            <div class="why-item-text">
+              <strong>Upfront Pricing</strong>
+              <span>No hidden costs or surprises</span>
+            </div>
+          </div>
+          <div class="why-item animate-on-scroll animate-delay-1">
+            <div class="why-check">✓</div>
+            <div class="why-item-text">
+              <strong>Guaranteed Work</strong>
+              <span>All work backed by warranty</span>
+            </div>
+          </div>
+          <div class="why-item animate-on-scroll animate-delay-2">
+            <div class="why-check">✓</div>
+            <div class="why-item-text">
+              <strong>Clean & Tidy</strong>
+              <span>We leave your home spotless</span>
+            </div>
+          </div>
+          <div class="why-item animate-on-scroll animate-delay-3">
+            <div class="why-check">✓</div>
+            <div class="why-item-text">
+              <strong>On-Time Always</strong>
+              <span>Punctual, reliable service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual animate-on-scroll">
+        <div class="about-image-wrapper">
+          <div class="about-image-placeholder">
+            <div class="icon-large">🔧</div>
+            <span>All Clear Maintenance Plumbing<br>Professional Plumbing Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section-header-center">
+      <div class="section-label animate-on-scroll">⭐ Testimonials</div>
+      <h2 class="section-title animate-on-scroll">What Our Customers<br>Are Saying</h2>
+      <p class="section-subtitle animate-on-scroll">Don't just take our word for it — hear from real Australians who trust All Clear Maintenance Plumbing.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate-on-scroll">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Had a burst pipe on a Sunday arvo and these legends came out within the hour. Fixed it fast, cleaned up after themselves, and the price was exactly what they quoted. Can't recommend All Clear Maintenance Plumbing enough!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MR</div>
+          <div class="testimonial-info">
+            <strong>Mark Richardson</strong>
+            <span>Homeowner — Verified Customer</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll animate-delay-1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"We use All Clear for all our rental property maintenance. They're always professional, on time, and their communication is excellent. The tenants love them too. Best plumber we've ever worked with."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SL</div>
+          <div class="testimonial-info">
+            <strong>Sarah Liu</strong>
+            <span>Property Manager — Verified Customer</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll animate-delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Called for a blocked drain and they sorted it out same day with a camera inspection. Showed me exactly what was going on. No upselling, just honest advice and great workmanship. Absolute legends!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">DT</div>
+          <div class="testimonial-info">
+            <strong>David Thompson</strong>
+            <span>Homeowner — Verified Customer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- Service Areas -->
+<section class="section" id="areas">
+  <div class="container">
+    <div class="section-header-center">
+      <div class="section-label animate-on-scroll">📍 Service Areas</div>
+      <h2 class="section-title animate-on-scroll">Areas We Service</h2>
+      <p class="section-subtitle animate-on-scroll">All Clear Maintenance Plumbing proudly services a wide range of areas. Contact us to confirm coverage in your location.</p>
+    </div>
+    <div class="areas-grid">
+      <div class="area-card animate-on-scroll">
+        <span class="area-pin">📍</span>
+        <span>Sydney CBD</span>
+      </div>
+      <div class="area-card animate-on-scroll animate-delay-1">
+        <span class="area-pin">📍</span>
+        <span>North Sydney</span>
+      </div>
+      <div class="area-card animate-on-scroll animate-delay-2">
+        <span class="area-pin">📍</span>
+        <span>Parramatta</span>
+      </div>
+      <div class="area-card animate-on-scroll animate-delay-3">
+        <span class="area-pin">📍</span>
+        <span>Penrith</span>
+      </div>
+      <div class="area-card animate-on-scroll animate-delay-4">
+        <span class="area-pin">📍</span>
+        <span>Liverpool</span>
+      </div>
+      <div class="area-card animate-on-scroll animate-delay-5">
+        <span class="area-pin">📍</span>
+        <span>Blacktown</span>
+      </div>
+      <div class="area-card animate-on-scroll animate-delay-6">
+        <span class="area-pin">📍</span>
+        <span>Campbelltown</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="section-header-center">
+      <div class="section-label animate-on-scroll">❓ FAQ</div>
+      <h2 class="section-title animate-on-scroll">Frequently Asked<br>Questions</h2>
+      <p class="section-subtitle animate-on-scroll">Got questions? We've got answers. Here are the most common things our customers ask.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What areas does All Clear Maintenance Plumbing service?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We service a wide range of areas across Australia. Our team covers Sydney CBD, North Sydney, Parramatta, Penrith, Liverpool, Blacktown, Campbelltown and surrounding suburbs. Call us on 1800 425 525 to confirm we service your area.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll animate-delay-1">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do you offer emergency plumbing services?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes! All Clear Maintenance Plumbing offers 24/7 emergency plumbing services. Whether it's a burst pipe, gas leak or major blockage, our emergency plumber can respond quickly to minimise damage. Call 1800 425 525 any time.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll animate-delay-2">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How much does a plumber cost?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Our pricing varies depending on the job. We always provide upfront, transparent quotes before starting any work — no hidden fees or surprises. Contact us for a free, no-obligation quote on your plumbing needs.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll animate-delay-3">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Are you licensed and insured?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Absolutely. All Clear Maintenance Plumbing is fully licensed and insured. All our plumbers hold current trade licences and we carry comprehensive public liability insurance for your peace of mind.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll animate-delay-4">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do you provide free quotes?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes, we provide free quotes for all plumbing work. Simply call us on 1800 425 525 or fill out our online contact form and we'll get back to you promptly with a detailed quote.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll animate-delay-5">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What brands of hot water systems do you install?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We install and service all major hot water system brands including Rheem, Rinnai, Dux, Bosch, Vulcan, Aquamax and more. We can recommend the best system for your home and budget.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll animate-delay-6">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How quickly can you attend to a plumbing issue?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">For emergencies, we aim to respond within 60 minutes. For standard bookings, we typically offer same-day or next-day service. We always arrive on time and keep you informed of our ETA.</div>
+        </div>
+      </div>
+      <div class="faq-item animate-on-scroll">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do you offer a warranty on your work?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes,
