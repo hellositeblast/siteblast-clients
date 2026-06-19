@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siteblast-clients.vercel.app/clients/do right electrical/sitemap.xml
