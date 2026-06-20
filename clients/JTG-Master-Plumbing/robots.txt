@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siteblast-clients.vercel.app/clients/jtg master plumbing/sitemap.xml
