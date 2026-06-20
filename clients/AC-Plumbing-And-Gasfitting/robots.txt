@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siteblast-clients.vercel.app/clients/ac-plumbing-gasfitting/sitemap.xml
