@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siteblast-clients.vercel.app/clients/Sterling-Gasfitting-and-Plumbing-Pty-Ltd/sitemap.xml
